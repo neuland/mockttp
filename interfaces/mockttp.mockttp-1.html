@@ -67,6 +67,16 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A mockttp instance allow you to start and stop mock servers and control their behaviour.</p>
+					</div>
+					<p>Call <code>.start()</code> to set up a server on a random port, use methods like <code>.get(url)</code>,
+						<code>.post(url)</code> and <code>.anyRequest()</code> to get a <a href="../classes/mockrule.mockrulebuilder.html">MockRuleBuilder</a> and start defining
+					mock rules. Call <code>.stop()</code> when your test is complete.</p>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -123,9 +133,15 @@
 					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/mockttp.ts#L18">mockttp.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2ccf2ea/src/mockttp.ts#L61">mockttp.ts:61</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The port the server is running on.</p>
+						</div>
+						<p>This will throw an error if read before the server is started.</p>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="proxyenv" class="tsd-anchor"></a>
@@ -133,9 +149,18 @@
 					<div class="tsd-signature tsd-kind-icon">proxy<wbr>Env<span class="tsd-signature-symbol">:</span> <a href="internal.proxyconfig.html" class="tsd-signature-type">ProxyConfig</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/mockttp.ts#L19">mockttp.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2ccf2ea/src/mockttp.ts#L72">mockttp.ts:72</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The environment variables typically needed to use this server as a proxy, in a format you
+							can add to your environment straight away.</p>
+						</div>
+						<p>This will throw an error if read before the server is started.</p>
+						<pre><code>process<span class="hljs-selector-class">.env</span> = Object.assign(process<span class="hljs-selector-class">.env</span>, mockServer.proxyEnv)
+</code></pre>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="url" class="tsd-anchor"></a>
@@ -143,9 +168,15 @@
 					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/mockttp.ts#L17">mockttp.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2ccf2ea/src/mockttp.ts#L48">mockttp.ts:48</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The root URL of the server.</p>
+						</div>
+						<p>This will throw an error if read before the server is started.</p>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -160,9 +191,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/mockttp.ts#L23">mockttp.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2ccf2ea/src/mockttp.ts#L77">mockttp.ts:77</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a builder for a mock rule that will match any requests on any path.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../classes/mockrule.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></h4>
 						</li>
 					</ul>
@@ -177,9 +213,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/mockttp.ts#L27">mockttp.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2ccf2ea/src/mockttp.ts#L93">mockttp.ts:93</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a builder for a mock rule that will match DELETE requests for the given path.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -200,9 +241,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/mockttp.ts#L14">mockttp.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2ccf2ea/src/mockttp.ts#L35">mockttp.ts:35</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Enable extra debug output so you can understand exactly what the server is doing.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -217,9 +263,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/mockttp.ts#L24">mockttp.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2ccf2ea/src/mockttp.ts#L81">mockttp.ts:81</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a builder for a mock rule that will match GET requests for the given path.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -240,9 +291,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/mockttp.ts#L31">mockttp.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2ccf2ea/src/mockttp.ts#L123">mockttp.ts:123</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Subscribe to hear about request details as they&#39;re received.</p>
+								</div>
+								<p>This is only useful in some niche use cases, such as logging all requests seen
+								by the server independently of the rules defined.</p>
+								<p>The callback will be called asynchronously from request handling. This function
+									returns a promise, and the callback is not guaranteed to be registered until
+								the promise is resolved.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -284,9 +345,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/mockttp.ts#L29">mockttp.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2ccf2ea/src/mockttp.ts#L111">mockttp.ts:111</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a builder for a mock rule that will match OPTIONS requests for the given path.</p>
+								</div>
+								<p>This can only be used if the <code>cors</code> option has been set to false.</p>
+								<p>If cors is true (the default when using a remote client, e.g. in the browser),
+									then the mock server automatically handles OPTIONS requests to ensure requests
+								to the server are allowed by clients observing CORS rules.</p>
+								<p>You can pass <code>{cors: false}</code> to <code>getLocal</code>/<code>getRemote</code> to disable this behaviour,
+									but if you&#39;re testing in a browser you will need to ensure you mock all OPTIONS
+								requests appropriately so that the browser allows your other requests to be sent.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -307,9 +380,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/mockttp.ts#L28">mockttp.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2ccf2ea/src/mockttp.ts#L97">mockttp.ts:97</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a builder for a mock rule that will match PATCH requests for the given path.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -330,9 +408,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/mockttp.ts#L25">mockttp.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2ccf2ea/src/mockttp.ts#L85">mockttp.ts:85</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a builder for a mock rule that will match POST requests for the given path.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -353,9 +436,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/mockttp.ts#L26">mockttp.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2ccf2ea/src/mockttp.ts#L89">mockttp.ts:89</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a builder for a mock rule that will match PUT requests for the given path.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -376,9 +464,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/mockttp.ts#L15">mockttp.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2ccf2ea/src/mockttp.ts#L41">mockttp.ts:41</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Reset the stored rules. Most of the time it&#39;s better to start &amp; stop the server instead,
+									but this can be useful in some special cases.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -393,9 +487,17 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/mockttp.ts#L11">mockttp.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2ccf2ea/src/mockttp.ts#L25">mockttp.ts:25</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Start a mock server.</p>
+								</div>
+								<p>Specify a fixed port if you need one. If you don&#39;t, a random port will be chosen, which
+									you can get later with <code>.port</code>, or by using <code>.url</code> and <code>.urlFor(path)</code> to generate
+								your URLs automatically.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -416,9 +518,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/mockttp.ts#L12">mockttp.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2ccf2ea/src/mockttp.ts#L30">mockttp.ts:30</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Stop the mock server and reset the rules.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -433,9 +540,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/mockttp.ts#L21">mockttp.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2ccf2ea/src/mockttp.ts#L55">mockttp.ts:55</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The URL for a given path on the server.</p>
+								</div>
+								<p>This will throw an error if read before the server is started.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>

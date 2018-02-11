@@ -113,9 +113,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/main.ts#L18">main.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2ccf2ea/src/main.ts#L30">main.ts:30</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a Mockttp instance on the local machine.</p>
+								</div>
+								<p>In most simple environments, you can call this method directly and immediately
+								get a Mockttp instance and start mocking servers.</p>
+								<p>In node, the mocked servers will run in process and require no further setup.</p>
+								<p>In browsers this is an alias for getRemote. You&#39;ll need to start a standalone server
+									outside your tests before calling this, which will create and manage your fake servers
+								outside the browser.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -136,9 +147,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/main.ts#L22">main.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2ccf2ea/src/main.ts#L40">main.ts:40</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a Mockttp instance, controlled through a Mockttp standalone server.</p>
+								</div>
+								<p>This connects to a Mockttp standalone server, and uses that to start
+								and stop mock servers.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -159,9 +177,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/main.ts#L26">main.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2ccf2ea/src/main.ts#L55">main.ts:55</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a standalone server, which can be used remotely to create &amp; manage mock servers.</p>
+								</div>
+								<p>This function exists so you can set up these servers programmatically, but for most
+									usage you can just run your tests via the <code>mockttp</code> binary, which will automatically
+								start and stop a standalone server for you:</p>
+								<pre><code>mockttp -c &lt;your <span class="hljs-built_in">test</span> <span class="hljs-built_in">command</span>&gt;
+</code></pre>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
