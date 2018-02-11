@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PartialMockRule | mockttp</title>
+	<title>MockRuleBuilder | mockttp</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/mockrule.html">MockRule</a>
 				</li>
 				<li>
-					<a href="mockrule.partialmockrule.html">PartialMockRule</a>
+					<a href="mockrule.mockrulebuilder.html">MockRuleBuilder</a>
 				</li>
 			</ul>
-			<h1>Class PartialMockRule</h1>
+			<h1>Class MockRuleBuilder</h1>
 		</div>
 	</div>
 </header>
@@ -69,18 +69,32 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Fluently builds mock rule data, passing it to the initial
-							callback once it&#39;s built &amp; complete, and returning the (eventually)
-						defined endpoint to the consuming code once it&#39;s been registered</p>
-					</div>
+					<dl class="tsd-comment-tags">
+						<dt>class</dt>
+						<dd><p>MockRuleBuilder</p>
+						</dd>
+						<dt>description</dt>
+						<dd><p>A builder for defining mock rules. Create one using a method like
+								<code>.get</code> or <code>.post</code> on a mock server, then call whatever methods you&#39;d like
+								here to define more precise request matching behaviour, control
+								how the request is handled, and how many times this rule should
+							be applied.</p>
+							<p>When you&#39;re done, call a <code>.thenX()</code> method to register the configured rule
+								with the server. These return a promise for a MockedEndpoint, which can be
+							used to verify the details of the requests matched by the rule.</p>
+							<p>This returns a promise because rule registration can be asynchronous,
+								either when using a remote server or testing in the browser. Wait for the
+								promise returned by <code>.thenX()</code> methods to guarantee that the rule has taken
+							effect before sending requests to it.</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">PartialMockRule</span>
+						<span class="target">MockRuleBuilder</span>
 					</li>
 				</ul>
 			</section>
@@ -91,29 +105,29 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="mockrule.partialmockrule.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="mockrule.mockrulebuilder.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="mockrule.partialmockrule.html#addrule" class="tsd-kind-icon">add<wbr>Rule</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="mockrule.partialmockrule.html#iscomplete" class="tsd-kind-icon">is<wbr>Complete</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="mockrule.partialmockrule.html#matchers" class="tsd-kind-icon">matchers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="mockrule.mockrulebuilder.html#addrule" class="tsd-kind-icon">add<wbr>Rule</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="mockrule.mockrulebuilder.html#iscomplete" class="tsd-kind-icon">is<wbr>Complete</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="mockrule.mockrulebuilder.html#matchers" class="tsd-kind-icon">matchers</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockrule.partialmockrule.html#always" class="tsd-kind-icon">always</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockrule.partialmockrule.html#once" class="tsd-kind-icon">once</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockrule.partialmockrule.html#thenpassthrough" class="tsd-kind-icon">then<wbr>Pass<wbr>Through</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockrule.partialmockrule.html#thenreply" class="tsd-kind-icon">then<wbr>Reply</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockrule.partialmockrule.html#thrice" class="tsd-kind-icon">thrice</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockrule.partialmockrule.html#times" class="tsd-kind-icon">times</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockrule.partialmockrule.html#twice" class="tsd-kind-icon">twice</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockrule.partialmockrule.html#withform" class="tsd-kind-icon">with<wbr>Form</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockrule.partialmockrule.html#withheaders" class="tsd-kind-icon">with<wbr>Headers</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockrule.mockrulebuilder.html#always" class="tsd-kind-icon">always</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockrule.mockrulebuilder.html#once" class="tsd-kind-icon">once</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockrule.mockrulebuilder.html#thenpassthrough" class="tsd-kind-icon">then<wbr>Pass<wbr>Through</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockrule.mockrulebuilder.html#thenreply" class="tsd-kind-icon">then<wbr>Reply</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockrule.mockrulebuilder.html#thrice" class="tsd-kind-icon">thrice</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockrule.mockrulebuilder.html#times" class="tsd-kind-icon">times</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockrule.mockrulebuilder.html#twice" class="tsd-kind-icon">twice</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockrule.mockrulebuilder.html#withform" class="tsd-kind-icon">with<wbr>Form</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockrule.mockrulebuilder.html#withheaders" class="tsd-kind-icon">with<wbr>Headers</a></li>
 							</ul>
 						</section>
 					</div>
@@ -125,14 +139,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Partial<wbr>Mock<wbr>Rule<span class="tsd-signature-symbol">(</span>addRule<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockrule.partialmockrule.html" class="tsd-signature-type">PartialMockRule</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Partial<wbr>Mock<wbr>Rule<span class="tsd-signature-symbol">(</span>method<span class="tsd-signature-symbol">: </span><a href="../enums/internal.method.html" class="tsd-signature-type">Method</a>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, addRule<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockrule.partialmockrule.html" class="tsd-signature-type">PartialMockRule</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Mock<wbr>Rule<wbr>Builder<span class="tsd-signature-symbol">(</span>addRule<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockrule.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Mock<wbr>Rule<wbr>Builder<span class="tsd-signature-symbol">(</span>method<span class="tsd-signature-symbol">: </span><a href="../enums/internal.method.html" class="tsd-signature-type">Method</a>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, addRule<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockrule.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/4b21b6b/src/rules/partial-mock-rule.ts#L37">rules/partial-mock-rule.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/rules/mock-rule-builder.ts#L50">rules/mock-rule-builder.ts:50</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -159,12 +173,12 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="mockrule.partialmockrule.html" class="tsd-signature-type">PartialMockRule</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="mockrule.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/4b21b6b/src/rules/partial-mock-rule.ts#L39">rules/partial-mock-rule.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/rules/mock-rule-builder.ts#L52">rules/mock-rule-builder.ts:52</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -197,7 +211,7 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="mockrule.partialmockrule.html" class="tsd-signature-type">PartialMockRule</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="mockrule.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -210,7 +224,7 @@
 					<div class="tsd-signature tsd-kind-icon">add<wbr>Rule<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/4b21b6b/src/rules/partial-mock-rule.ts#L37">rules/partial-mock-rule.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/rules/mock-rule-builder.ts#L50">rules/mock-rule-builder.ts:50</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -241,7 +255,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Complete<span class="tsd-signature-symbol">:</span> <a href="../modules/mockruledata.html#completioncheckerdata" class="tsd-signature-type">CompletionCheckerData</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/4b21b6b/src/rules/partial-mock-rule.ts#L60">rules/partial-mock-rule.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/rules/mock-rule-builder.ts#L73">rules/mock-rule-builder.ts:73</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -251,7 +265,7 @@
 					<div class="tsd-signature tsd-kind-icon">matchers<span class="tsd-signature-symbol">:</span> <a href="../modules/mockruledata.html#matcherdata" class="tsd-signature-type">MatcherData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/4b21b6b/src/rules/partial-mock-rule.ts#L59">rules/partial-mock-rule.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/rules/mock-rule-builder.ts#L72">rules/mock-rule-builder.ts:72</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -262,16 +276,21 @@
 					<a name="always" class="tsd-anchor"></a>
 					<h3>always</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">always<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockrule.partialmockrule.html" class="tsd-signature-type">PartialMockRule</a></li>
+						<li class="tsd-signature tsd-kind-icon">always<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockrule.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/4b21b6b/src/rules/partial-mock-rule.ts#L72">rules/partial-mock-rule.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/rules/mock-rule-builder.ts#L94">rules/mock-rule-builder.ts:94</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="mockrule.partialmockrule.html" class="tsd-signature-type">PartialMockRule</a></h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Run this rule forever, for all matching requests</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="mockrule.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -279,16 +298,21 @@
 					<a name="once" class="tsd-anchor"></a>
 					<h3>once</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">once<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockrule.partialmockrule.html" class="tsd-signature-type">PartialMockRule</a></li>
+						<li class="tsd-signature tsd-kind-icon">once<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockrule.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/4b21b6b/src/rules/partial-mock-rule.ts#L77">rules/partial-mock-rule.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/rules/mock-rule-builder.ts#L102">rules/mock-rule-builder.ts:102</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="mockrule.partialmockrule.html" class="tsd-signature-type">PartialMockRule</a></h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Run this rule only once, for the first matching request</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="mockrule.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -302,9 +326,22 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/4b21b6b/src/rules/partial-mock-rule.ts#L107">rules/partial-mock-rule.ts:107</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/rules/mock-rule-builder.ts#L166">rules/mock-rule-builder.ts:166</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Pass matched requests through to their real destination. This works
+										for proxied requests only, direct requests will be rejected with
+									an error.</p>
+								</div>
+								<p>Calling this method registers the rule with the server, so it
+								starts to handle requests.</p>
+								<p>This method returns a promise that resolves with a mocked endpoint.
+									Wait for the promise to confirm that the rule has taken effect
+									before sending requests to be matched. The mocked endpoint
+								can be used to assert on the requests matched by this rule.</p>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/internal.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -319,9 +356,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/4b21b6b/src/rules/partial-mock-rule.ts#L97">rules/partial-mock-rule.ts:97</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/rules/mock-rule-builder.ts#L143">rules/mock-rule-builder.ts:143</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Reply to matched with with given status and (optionally) body
+									and headers.</p>
+								</div>
+								<p>Calling this method registers the rule with the server, so it
+								starts to handle requests.</p>
+								<p>This method returns a promise that resolves with a mocked endpoint.
+									Wait for the promise to confirm that the rule has taken effect
+									before sending requests to be matched. The mocked endpoint
+								can be used to assert on the requests matched by this rule.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -342,16 +391,21 @@
 					<a name="thrice" class="tsd-anchor"></a>
 					<h3>thrice</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">thrice<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockrule.partialmockrule.html" class="tsd-signature-type">PartialMockRule</a></li>
+						<li class="tsd-signature tsd-kind-icon">thrice<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockrule.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/4b21b6b/src/rules/partial-mock-rule.ts#L87">rules/partial-mock-rule.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/rules/mock-rule-builder.ts#L118">rules/mock-rule-builder.ts:118</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="mockrule.partialmockrule.html" class="tsd-signature-type">PartialMockRule</a></h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Run this rule three times, for the first three matching requests</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="mockrule.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -359,22 +413,27 @@
 					<a name="times" class="tsd-anchor"></a>
 					<h3>times</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">times<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockrule.partialmockrule.html" class="tsd-signature-type">PartialMockRule</a></li>
+						<li class="tsd-signature tsd-kind-icon">times<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockrule.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/4b21b6b/src/rules/partial-mock-rule.ts#L92">rules/partial-mock-rule.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/rules/mock-rule-builder.ts#L126">rules/mock-rule-builder.ts:126</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Run this rule the given number of times, for the first matching requests</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>n: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="mockrule.partialmockrule.html" class="tsd-signature-type">PartialMockRule</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="mockrule.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -382,16 +441,21 @@
 					<a name="twice" class="tsd-anchor"></a>
 					<h3>twice</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">twice<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockrule.partialmockrule.html" class="tsd-signature-type">PartialMockRule</a></li>
+						<li class="tsd-signature tsd-kind-icon">twice<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockrule.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/4b21b6b/src/rules/partial-mock-rule.ts#L82">rules/partial-mock-rule.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/rules/mock-rule-builder.ts#L110">rules/mock-rule-builder.ts:110</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="mockrule.partialmockrule.html" class="tsd-signature-type">PartialMockRule</a></h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Run this rule twice, for the first two matching requests</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="mockrule.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -399,15 +463,20 @@
 					<a name="withform" class="tsd-anchor"></a>
 					<h3>with<wbr>Form</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">with<wbr>Form<span class="tsd-signature-symbol">(</span>formData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockrule.partialmockrule.html" class="tsd-signature-type">PartialMockRule</a></li>
+						<li class="tsd-signature tsd-kind-icon">with<wbr>Form<span class="tsd-signature-symbol">(</span>formData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockrule.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/4b21b6b/src/rules/partial-mock-rule.ts#L67">rules/partial-mock-rule.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/rules/mock-rule-builder.ts#L86">rules/mock-rule-builder.ts:86</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Match only requests whose bodies include the given form data</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -419,7 +488,7 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="mockrule.partialmockrule.html" class="tsd-signature-type">PartialMockRule</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="mockrule.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -433,9 +502,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/4b21b6b/src/rules/partial-mock-rule.ts#L62">rules/partial-mock-rule.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/69f0ab3/src/rules/mock-rule-builder.ts#L78">rules/mock-rule-builder.ts:78</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Match only requests that include the given headers</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -481,46 +555,46 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="mockrule.partialmockrule.html" class="tsd-kind-icon">Partial<wbr>Mock<wbr>Rule</a>
+						<a href="mockrule.mockrulebuilder.html" class="tsd-kind-icon">Mock<wbr>Rule<wbr>Builder</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="mockrule.partialmockrule.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="mockrule.mockrulebuilder.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="mockrule.partialmockrule.html#addrule" class="tsd-kind-icon">add<wbr>Rule</a>
+								<a href="mockrule.mockrulebuilder.html#addrule" class="tsd-kind-icon">add<wbr>Rule</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="mockrule.partialmockrule.html#iscomplete" class="tsd-kind-icon">is<wbr>Complete</a>
+								<a href="mockrule.mockrulebuilder.html#iscomplete" class="tsd-kind-icon">is<wbr>Complete</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="mockrule.partialmockrule.html#matchers" class="tsd-kind-icon">matchers</a>
+								<a href="mockrule.mockrulebuilder.html#matchers" class="tsd-kind-icon">matchers</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="mockrule.partialmockrule.html#always" class="tsd-kind-icon">always</a>
+								<a href="mockrule.mockrulebuilder.html#always" class="tsd-kind-icon">always</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="mockrule.partialmockrule.html#once" class="tsd-kind-icon">once</a>
+								<a href="mockrule.mockrulebuilder.html#once" class="tsd-kind-icon">once</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="mockrule.partialmockrule.html#thenpassthrough" class="tsd-kind-icon">then<wbr>Pass<wbr>Through</a>
+								<a href="mockrule.mockrulebuilder.html#thenpassthrough" class="tsd-kind-icon">then<wbr>Pass<wbr>Through</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="mockrule.partialmockrule.html#thenreply" class="tsd-kind-icon">then<wbr>Reply</a>
+								<a href="mockrule.mockrulebuilder.html#thenreply" class="tsd-kind-icon">then<wbr>Reply</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="mockrule.partialmockrule.html#thrice" class="tsd-kind-icon">thrice</a>
+								<a href="mockrule.mockrulebuilder.html#thrice" class="tsd-kind-icon">thrice</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="mockrule.partialmockrule.html#times" class="tsd-kind-icon">times</a>
+								<a href="mockrule.mockrulebuilder.html#times" class="tsd-kind-icon">times</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="mockrule.partialmockrule.html#twice" class="tsd-kind-icon">twice</a>
+								<a href="mockrule.mockrulebuilder.html#twice" class="tsd-kind-icon">twice</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="mockrule.partialmockrule.html#withform" class="tsd-kind-icon">with<wbr>Form</a>
+								<a href="mockrule.mockrulebuilder.html#withform" class="tsd-kind-icon">with<wbr>Form</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="mockrule.partialmockrule.html#withheaders" class="tsd-kind-icon">with<wbr>Headers</a>
+								<a href="mockrule.mockrulebuilder.html#withheaders" class="tsd-kind-icon">with<wbr>Headers</a>
 							</li>
 						</ul>
 					</li>
