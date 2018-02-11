@@ -89,6 +89,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="mockruledata.simplehandlerdata.html#data" class="tsd-kind-icon">data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="mockruledata.simplehandlerdata.html#headers" class="tsd-kind-icon">headers</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="mockruledata.simplehandlerdata.html#status" class="tsd-kind-icon">status</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="mockruledata.simplehandlerdata.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
@@ -102,13 +103,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Simple<wbr>Handler<wbr>Data<span class="tsd-signature-symbol">(</span>status<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockruledata.simplehandlerdata.html" class="tsd-signature-type">SimpleHandlerData</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Simple<wbr>Handler<wbr>Data<span class="tsd-signature-symbol">(</span>status<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, headers<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">http.OutgoingHttpHeaders</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockruledata.simplehandlerdata.html" class="tsd-signature-type">SimpleHandlerData</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2f383e1/src/rules/handlers.ts#L26">rules/handlers.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/4b21b6b/src/rules/handlers.ts#L26">rules/handlers.ts:26</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -118,6 +119,9 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> headers: <span class="tsd-signature-type">http.OutgoingHttpHeaders</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="mockruledata.simplehandlerdata.html" class="tsd-signature-type">SimpleHandlerData</a></h4>
@@ -133,7 +137,17 @@
 					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2f383e1/src/rules/handlers.ts#L30">rules/handlers.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/4b21b6b/src/rules/handlers.ts#L30">rules/handlers.ts:30</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="headers" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> headers</h3>
+					<div class="tsd-signature tsd-kind-icon">headers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">http.OutgoingHttpHeaders</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/4b21b6b/src/rules/handlers.ts#L31">rules/handlers.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -143,7 +157,7 @@
 					<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2f383e1/src/rules/handlers.ts#L29">rules/handlers.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/4b21b6b/src/rules/handlers.ts#L29">rules/handlers.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -153,7 +167,7 @@
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"simple"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;simple&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/2f383e1/src/rules/handlers.ts#L26">rules/handlers.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/4b21b6b/src/rules/handlers.ts#L26">rules/handlers.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -206,6 +220,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="mockruledata.simplehandlerdata.html#data" class="tsd-kind-icon">data</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="mockruledata.simplehandlerdata.html#headers" class="tsd-kind-icon">headers</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="mockruledata.simplehandlerdata.html#status" class="tsd-kind-icon">status</a>
