@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AlwaysData | mockttp</title>
+	<title>CallbackHandlerData | mockttp</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/mockruledata.html">MockRuleData</a>
 				</li>
 				<li>
-					<a href="mockruledata.alwaysdata.html">AlwaysData</a>
+					<a href="mockruledata.callbackhandlerdata.html">CallbackHandlerData</a>
 				</li>
 			</ul>
-			<h1>Class AlwaysData</h1>
+			<h1>Class CallbackHandlerData</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">AlwaysData</span>
+						<span class="target">CallbackHandlerData</span>
 					</li>
 				</ul>
 			</section>
@@ -82,13 +82,14 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="mockruledata.alwaysdata.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="mockruledata.callbackhandlerdata.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="mockruledata.alwaysdata.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="mockruledata.callbackhandlerdata.html#callback" class="tsd-kind-icon">callback</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="mockruledata.callbackhandlerdata.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,16 +101,40 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Always<wbr>Data<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockruledata.alwaysdata.html" class="tsd-signature-type">AlwaysData</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Callback<wbr>Handler<wbr>Data<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockruledata.callbackhandlerdata.html" class="tsd-signature-type">CallbackHandlerData</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a12a44c/src/rules/completion-checkers.ts#L26">rules/completion-checkers.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a12a44c/src/rules/handlers.ts#L49">rules/handlers.ts:49</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="mockruledata.alwaysdata.html" class="tsd-signature-type">AlwaysData</a></h4>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/internal.completedrequest.html" class="tsd-signature-type">CompletedRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/mockruledata.callbackhandlerresult.html" class="tsd-signature-type">CallbackHandlerResult</a></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>request: <a href="../interfaces/internal.completedrequest.html" class="tsd-signature-type">CompletedRequest</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <a href="../interfaces/mockruledata.callbackhandlerresult.html" class="tsd-signature-type">CallbackHandlerResult</a></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="mockruledata.callbackhandlerdata.html" class="tsd-signature-type">CallbackHandlerData</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -117,12 +142,43 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="type" class="tsd-anchor"></a>
-					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"always"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;always&quot;</span></div>
+					<a name="callback" class="tsd-anchor"></a>
+					<h3>callback</h3>
+					<div class="tsd-signature tsd-kind-icon">callback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a12a44c/src/rules/completion-checkers.ts#L26">rules/completion-checkers.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a12a44c/src/rules/handlers.ts#L52">rules/handlers.ts:52</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/internal.completedrequest.html" class="tsd-signature-type">CompletedRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/mockruledata.callbackhandlerresult.html" class="tsd-signature-type">CallbackHandlerResult</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>request: <a href="../interfaces/internal.completedrequest.html" class="tsd-signature-type">CompletedRequest</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../interfaces/mockruledata.callbackhandlerresult.html" class="tsd-signature-type">CallbackHandlerResult</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"callback"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;callback&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a12a44c/src/rules/handlers.ts#L49">rules/handlers.ts:49</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -150,24 +206,27 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="mockruledata.alwaysdata.html" class="tsd-kind-icon">Always<wbr>Data</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="mockruledata.alwaysdata.html" class="tsd-kind-icon">Always<wbr>Data</a>
+						<a href="mockruledata.callbackhandlerdata.html" class="tsd-kind-icon">Callback<wbr>Handler<wbr>Data</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="mockruledata.alwaysdata.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="mockruledata.callbackhandlerdata.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="mockruledata.alwaysdata.html#type" class="tsd-kind-icon">type</a>
+								<a href="mockruledata.callbackhandlerdata.html#callback" class="tsd-kind-icon">callback</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="mockruledata.callbackhandlerdata.html#type" class="tsd-kind-icon">type</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="mockruledata.callbackhandlerdata.html" class="tsd-kind-icon">Callback<wbr>Handler<wbr>Data</a>
-					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="mockruledata.formdatamatcherdata.html" class="tsd-kind-icon">Form<wbr>Data<wbr>Matcher<wbr>Data</a>
 					</li>
