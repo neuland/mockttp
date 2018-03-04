@@ -145,7 +145,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a12a44c/src/rules/mock-rule-builder.ts#L50">rules/mock-rule-builder.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f54c029/src/rules/mock-rule-builder.ts#L50">rules/mock-rule-builder.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -183,7 +183,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a12a44c/src/rules/mock-rule-builder.ts#L56">rules/mock-rule-builder.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f54c029/src/rules/mock-rule-builder.ts#L56">rules/mock-rule-builder.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -235,7 +235,7 @@
 					<div class="tsd-signature tsd-kind-icon">add<wbr>Rule<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a12a44c/src/rules/mock-rule-builder.ts#L50">rules/mock-rule-builder.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f54c029/src/rules/mock-rule-builder.ts#L50">rules/mock-rule-builder.ts:50</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -266,7 +266,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Complete<span class="tsd-signature-symbol">:</span> <a href="../modules/mockruledata.html#completioncheckerdata" class="tsd-signature-type">CompletionCheckerData</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a12a44c/src/rules/mock-rule-builder.ts#L77">rules/mock-rule-builder.ts:77</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f54c029/src/rules/mock-rule-builder.ts#L77">rules/mock-rule-builder.ts:77</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -276,7 +276,7 @@
 					<div class="tsd-signature tsd-kind-icon">matchers<span class="tsd-signature-symbol">:</span> <a href="../modules/mockruledata.html#matcherdata" class="tsd-signature-type">MatcherData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a12a44c/src/rules/mock-rule-builder.ts#L76">rules/mock-rule-builder.ts:76</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f54c029/src/rules/mock-rule-builder.ts#L76">rules/mock-rule-builder.ts:76</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -293,7 +293,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a12a44c/src/rules/mock-rule-builder.ts#L98">rules/mock-rule-builder.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f54c029/src/rules/mock-rule-builder.ts#L98">rules/mock-rule-builder.ts:98</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -315,7 +315,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a12a44c/src/rules/mock-rule-builder.ts#L106">rules/mock-rule-builder.ts:106</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f54c029/src/rules/mock-rule-builder.ts#L106">rules/mock-rule-builder.ts:106</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -337,9 +337,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a12a44c/src/rules/mock-rule-builder.ts#L157">rules/mock-rule-builder.ts:157</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f54c029/src/rules/mock-rule-builder.ts#L174">rules/mock-rule-builder.ts:174</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Call the given callback for any matched requests that are recieved,
+									and build a response from the result.</p>
+								</div>
+								<p>The callback should return an object, potentially including various
+									fields to define the response. All fields are optional, and default
+								to being empty/blank, except for the status, which defaults to 200.</p>
+								<p>Valid fields are:</p>
+								<ul>
+									<li><code>status</code> (number)</li>
+									<li><code>body</code> (string)</li>
+									<li><code>headers</code> (object with string keys &amp; values)</li>
+									<li><code>json</code> (object, which will be sent as a JSON response)</li>
+								</ul>
+								<p>If the callback throws an exception, the server will return a 500
+								with the exception message.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -378,7 +396,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a12a44c/src/rules/mock-rule-builder.ts#L180">rules/mock-rule-builder.ts:180</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f54c029/src/rules/mock-rule-builder.ts#L197">rules/mock-rule-builder.ts:197</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -408,7 +426,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a12a44c/src/rules/mock-rule-builder.ts#L147">rules/mock-rule-builder.ts:147</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f54c029/src/rules/mock-rule-builder.ts#L147">rules/mock-rule-builder.ts:147</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -449,7 +467,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a12a44c/src/rules/mock-rule-builder.ts#L122">rules/mock-rule-builder.ts:122</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f54c029/src/rules/mock-rule-builder.ts#L122">rules/mock-rule-builder.ts:122</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -471,7 +489,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a12a44c/src/rules/mock-rule-builder.ts#L130">rules/mock-rule-builder.ts:130</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f54c029/src/rules/mock-rule-builder.ts#L130">rules/mock-rule-builder.ts:130</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -499,7 +517,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a12a44c/src/rules/mock-rule-builder.ts#L114">rules/mock-rule-builder.ts:114</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f54c029/src/rules/mock-rule-builder.ts#L114">rules/mock-rule-builder.ts:114</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -521,7 +539,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a12a44c/src/rules/mock-rule-builder.ts#L90">rules/mock-rule-builder.ts:90</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f54c029/src/rules/mock-rule-builder.ts#L90">rules/mock-rule-builder.ts:90</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -554,7 +572,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a12a44c/src/rules/mock-rule-builder.ts#L82">rules/mock-rule-builder.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f54c029/src/rules/mock-rule-builder.ts#L82">rules/mock-rule-builder.ts:82</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
