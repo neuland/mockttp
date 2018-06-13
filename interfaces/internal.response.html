@@ -106,6 +106,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="internal.response.html#json" class="tsd-kind-icon">json</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="internal.response.html#jsonp" class="tsd-kind-icon">jsonp</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="internal.response.html#locals" class="tsd-kind-icon">locals</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="internal.response.html#req" class="tsd-kind-icon">req</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="internal.response.html#send" class="tsd-kind-icon">send</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="internal.response.html#senddate" class="tsd-kind-icon">send<wbr>Date</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="internal.response.html#statuscode" class="tsd-kind-icon">status<wbr>Code</a></li>
@@ -181,7 +182,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Writable.__constructor</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3720</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3784</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -204,7 +205,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Response.app</p>
 						<ul>
-							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:818</li>
+							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:825</li>
 						</ul>
 					</aside>
 				</section>
@@ -215,7 +216,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Response.charset</p>
 						<ul>
-							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:807</li>
+							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:814</li>
 						</ul>
 					</aside>
 				</section>
@@ -226,7 +227,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from ServerResponse.finished</p>
 						<ul>
-							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:822</li>
+							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:837</li>
 						</ul>
 					</aside>
 				</section>
@@ -238,7 +239,7 @@
 						<p>Inherited from Response.headersSent</p>
 						<p>Overrides ServerResponse.headersSent</p>
 						<ul>
-							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:715</li>
+							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:722</li>
 						</ul>
 					</aside>
 				</section>
@@ -249,7 +250,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Response.json</p>
 						<ul>
-							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:518</li>
+							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:524</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -271,7 +272,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Response.jsonp</p>
 						<ul>
-							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:530</li>
+							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:536</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -293,9 +294,26 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Response.locals</p>
 						<ul>
-							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:805</li>
+							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:812</li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="req" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> req</h3>
+					<div class="tsd-signature tsd-kind-icon">req<span class="tsd-signature-symbol">:</span> <a href="internal.request.html" class="tsd-signature-type">Request</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Response.req</p>
+						<ul>
+							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:842</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>After middleware.init executed, Response will contain req property
+							See: express/lib/middleware/init.js</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="send" class="tsd-anchor"></a>
@@ -304,7 +322,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Response.send</p>
 						<ul>
-							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:506</li>
+							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:512</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -327,7 +345,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 					<aside class="tsd-sources">
 						<p>Inherited from ServerResponse.sendDate</p>
 						<ul>
-							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:817</li>
+							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:832</li>
 						</ul>
 					</aside>
 				</section>
@@ -338,7 +356,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 					<aside class="tsd-sources">
 						<p>Inherited from ServerResponse.statusCode</p>
 						<ul>
-							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:812</li>
+							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:827</li>
 						</ul>
 					</aside>
 				</section>
@@ -349,7 +367,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 					<aside class="tsd-sources">
 						<p>Inherited from ServerResponse.statusMessage</p>
 						<ul>
-							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:813</li>
+							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:828</li>
 						</ul>
 					</aside>
 				</section>
@@ -360,7 +378,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 					<aside class="tsd-sources">
 						<p>Inherited from Writable.writable</p>
 						<ul>
-							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3720</li>
+							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3784</li>
 						</ul>
 					</aside>
 				</section>
@@ -371,7 +389,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 					<aside class="tsd-sources">
 						<p>Inherited from EventEmitter.defaultMaxListeners</p>
 						<ul>
-							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:695</li>
+							<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:710</li>
 						</ul>
 					</aside>
 				</section>
@@ -389,7 +407,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Writable._write</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3722</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3786</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -426,7 +444,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.addListener</p>
 								<p>Overrides EventEmitter.addListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3740</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3804</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -459,7 +477,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.addListener</p>
 								<p>Overrides EventEmitter.addListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3741</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3805</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -490,7 +508,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.addListener</p>
 								<p>Overrides EventEmitter.addListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3742</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3806</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -521,7 +539,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.addListener</p>
 								<p>Overrides EventEmitter.addListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3743</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3807</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -558,7 +576,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.addListener</p>
 								<p>Overrides EventEmitter.addListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3744</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3808</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -589,7 +607,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.addListener</p>
 								<p>Overrides EventEmitter.addListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3745</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3809</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -626,7 +644,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.addListener</p>
 								<p>Overrides EventEmitter.addListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3746</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3810</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -671,7 +689,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from ServerResponse.addTrailers</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:821</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:836</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -695,7 +713,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.append</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:829</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:836</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -735,7 +753,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.attachment</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:694</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:700</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -764,7 +782,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.clearCookie</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:721</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:728</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -796,7 +814,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.contentType</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:621</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:627</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -835,7 +853,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.cookie</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:740</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:747</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -872,7 +890,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.cookie</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:741</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:748</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -893,7 +911,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.cookie</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:742</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:749</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -923,7 +941,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.download</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:604</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:610</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -948,7 +966,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.download</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:605</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:611</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -966,7 +984,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.download</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:606</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:612</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -984,7 +1002,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.download</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:607</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:613</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1021,7 +1039,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.emit</p>
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3748</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3812</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1040,7 +1058,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.emit</p>
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3749</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3813</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1056,7 +1074,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.emit</p>
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3750</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3814</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1075,7 +1093,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.emit</p>
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3751</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3815</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1094,7 +1112,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.emit</p>
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3752</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3816</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1110,7 +1128,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.emit</p>
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3753</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3817</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1129,7 +1147,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.emit</p>
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3754</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3818</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1161,7 +1179,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from ServerResponse.end</p>
 								<p>Overrides Writable.end</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:825</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:840</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1171,7 +1189,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from ServerResponse.end</p>
 								<p>Overrides Writable.end</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:826</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:841</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1190,7 +1208,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from ServerResponse.end</p>
 								<p>Overrides Writable.end</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:827</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:842</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1209,7 +1227,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from ServerResponse.end</p>
 								<p>Overrides Writable.end</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:828</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:843</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1231,7 +1249,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from ServerResponse.end</p>
 								<p>Overrides Writable.end</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:829</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:844</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1259,7 +1277,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from EventEmitter.eventNames</p>
 								<p>Overrides EventEmitter.eventNames</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:708</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:723</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -1277,7 +1295,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.format</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:689</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:695</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1347,7 +1365,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.get</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:718</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:725</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1376,7 +1394,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from ServerResponse.getHeader</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:818</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:833</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1401,7 +1419,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from EventEmitter.getMaxListeners</p>
 								<p>Overrides EventEmitter.getMaxListeners</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:705</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:720</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -1420,7 +1438,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.header</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:711</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:718</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1435,7 +1453,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.header</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:712</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:719</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1462,7 +1480,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.links</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:493</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:499</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1497,7 +1515,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from EventEmitter.listenerCount</p>
 								<p>Overrides EventEmitter.listenerCount</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:709</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:724</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1522,7 +1540,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from EventEmitter.listeners</p>
 								<p>Overrides EventEmitter.listeners</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:706</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:721</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1546,7 +1564,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.location</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:770</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:777</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1598,7 +1616,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.on</p>
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3756</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3820</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1617,7 +1635,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.on</p>
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3757</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3821</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1648,7 +1666,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.on</p>
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3758</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3822</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1679,7 +1697,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.on</p>
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3759</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3823</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1716,7 +1734,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.on</p>
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3760</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3824</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1747,7 +1765,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.on</p>
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3761</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3825</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1784,7 +1802,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.on</p>
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3762</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3826</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1836,7 +1854,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.once</p>
 								<p>Overrides EventEmitter.once</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3764</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3828</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1855,7 +1873,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.once</p>
 								<p>Overrides EventEmitter.once</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3765</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3829</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1886,7 +1904,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.once</p>
 								<p>Overrides EventEmitter.once</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3766</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3830</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1917,7 +1935,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.once</p>
 								<p>Overrides EventEmitter.once</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3767</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3831</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1954,7 +1972,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.once</p>
 								<p>Overrides EventEmitter.once</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3768</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3832</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1985,7 +2003,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.once</p>
 								<p>Overrides EventEmitter.once</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3769</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3833</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2022,7 +2040,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.once</p>
 								<p>Overrides EventEmitter.once</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3770</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3834</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2067,7 +2085,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from internal.pipe</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3623</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3687</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2107,7 +2125,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.prependListener</p>
 								<p>Overrides EventEmitter.prependListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3772</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3836</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2126,7 +2144,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.prependListener</p>
 								<p>Overrides EventEmitter.prependListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3773</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3837</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2157,7 +2175,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.prependListener</p>
 								<p>Overrides EventEmitter.prependListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3774</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3838</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2188,7 +2206,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.prependListener</p>
 								<p>Overrides EventEmitter.prependListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3775</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3839</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2225,7 +2243,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.prependListener</p>
 								<p>Overrides EventEmitter.prependListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3776</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3840</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2256,7 +2274,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.prependListener</p>
 								<p>Overrides EventEmitter.prependListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3777</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3841</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2293,7 +2311,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.prependListener</p>
 								<p>Overrides EventEmitter.prependListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3778</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3842</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2345,7 +2363,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.prependOnceListener</p>
 								<p>Overrides EventEmitter.prependOnceListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3780</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3844</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2364,7 +2382,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.prependOnceListener</p>
 								<p>Overrides EventEmitter.prependOnceListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3781</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3845</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2395,7 +2413,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.prependOnceListener</p>
 								<p>Overrides EventEmitter.prependOnceListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3782</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3846</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2426,7 +2444,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.prependOnceListener</p>
 								<p>Overrides EventEmitter.prependOnceListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3783</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3847</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2463,7 +2481,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.prependOnceListener</p>
 								<p>Overrides EventEmitter.prependOnceListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3784</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3848</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2494,7 +2512,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.prependOnceListener</p>
 								<p>Overrides EventEmitter.prependOnceListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3785</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3849</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2531,7 +2549,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.prependOnceListener</p>
 								<p>Overrides EventEmitter.prependOnceListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3786</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3850</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2578,7 +2596,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.redirect</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:788</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:795</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2608,7 +2626,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.redirect</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:789</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:796</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2626,7 +2644,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.redirect</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:790</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:797</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2654,7 +2672,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from EventEmitter.removeAllListeners</p>
 								<p>Overrides EventEmitter.removeAllListeners</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:703</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:718</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2678,7 +2696,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from ServerResponse.removeHeader</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:819</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:834</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2709,7 +2727,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.removeListener</p>
 								<p>Overrides EventEmitter.removeListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3788</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3852</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2728,7 +2746,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.removeListener</p>
 								<p>Overrides EventEmitter.removeListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3789</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3853</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2759,7 +2777,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.removeListener</p>
 								<p>Overrides EventEmitter.removeListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3790</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3854</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2790,7 +2808,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.removeListener</p>
 								<p>Overrides EventEmitter.removeListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3791</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3855</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2827,7 +2845,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.removeListener</p>
 								<p>Overrides EventEmitter.removeListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3792</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3856</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2858,7 +2876,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.removeListener</p>
 								<p>Overrides EventEmitter.removeListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3793</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3857</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2895,7 +2913,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from Writable.removeListener</p>
 								<p>Overrides EventEmitter.removeListener</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3794</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3858</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2941,7 +2959,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.render</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:802</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:809</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2974,7 +2992,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.render</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:803</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:810</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3004,7 +3022,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.sendFile</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:572</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:578</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3060,7 +3078,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.sendFile</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:573</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:579</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3078,7 +3096,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.sendFile</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:574</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:580</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3096,7 +3114,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.sendFile</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:575</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:581</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3126,7 +3144,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.sendStatus</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:481</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:487</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3168,7 +3186,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.sendfile</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:580</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:586</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3190,7 +3208,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.sendfile</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:584</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:590</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3215,7 +3233,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.sendfile</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:588</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:594</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3240,7 +3258,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.sendfile</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:592</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:598</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3272,13 +3290,14 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>field<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Response</span></li>
 						<li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>field<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Response</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>field<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Response</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from Response.set</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:708</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:714</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3304,7 +3323,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.set</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:709</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:715</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3314,6 +3333,24 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Response</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Response.set</p>
+								<ul>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:716</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>field: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Response</span></h4>
@@ -3331,7 +3368,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Writable.setDefaultEncoding</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3725</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:3789</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3355,7 +3392,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from ServerResponse.setHeader</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:815</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:830</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3383,7 +3420,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from EventEmitter.setMaxListeners</p>
 								<p>Overrides EventEmitter.setMaxListeners</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:704</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:719</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3407,7 +3444,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from ServerResponse.setTimeout</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:816</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:831</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3434,7 +3471,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.status</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:468</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:474</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3463,7 +3500,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.type</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:635</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:641</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3500,7 +3537,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from Response.vary</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:816</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/express-serve-static-core/index.d.ts:823</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3538,7 +3575,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from ServerResponse.write</p>
 								<p>Overrides Writable.write</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:803</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:818</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3554,7 +3591,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from ServerResponse.write</p>
 								<p>Overrides Writable.write</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:804</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:819</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3573,7 +3610,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from ServerResponse.write</p>
 								<p>Overrides Writable.write</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:805</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:820</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3592,7 +3629,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from ServerResponse.write</p>
 								<p>Overrides Writable.write</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:806</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:821</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3614,7 +3651,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from ServerResponse.write</p>
 								<p>Overrides Writable.write</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:807</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:822</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3636,7 +3673,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 								<p>Inherited from ServerResponse.write</p>
 								<p>Overrides Writable.write</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:820</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:835</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3663,7 +3700,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from ServerResponse.writeContinue</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:809</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:824</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -3682,7 +3719,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from ServerResponse.writeHead</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:810</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:825</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3703,7 +3740,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from ServerResponse.writeHead</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:811</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:826</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3730,7 +3767,7 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.listenerCount</p>
 								<ul>
-									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:694</li>
+									<li>Defined in /home/travis/build/pimterry/mockttp/node_modules/@types/node/index.d.ts:709</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3831,6 +3868,9 @@ res.<span class="hljs-built_in">send</span>(<span class="hljs-number">404</span>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="internal.response.html#locals" class="tsd-kind-icon">locals</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="internal.response.html#req" class="tsd-kind-icon">req</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="internal.response.html#send" class="tsd-kind-icon">send</a>

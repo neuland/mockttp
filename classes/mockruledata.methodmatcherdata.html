@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>RuleCompletionChecker | mockttp</title>
+	<title>MethodMatcherData | mockttp</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../index.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/mockrule.html">MockRule</a>
+					<a href="../modules/mockruledata.html">MockRuleData</a>
 				</li>
 				<li>
-					<a href="mockrule.rulecompletionchecker.html">RuleCompletionChecker</a>
+					<a href="mockruledata.methodmatcherdata.html">MethodMatcherData</a>
 				</li>
 			</ul>
-			<h1>Interface RuleCompletionChecker</h1>
+			<h1>Class MethodMatcherData</h1>
 		</div>
 	</div>
 </header>
@@ -71,34 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="mockrule.ruleexplainable.html" class="tsd-signature-type">RuleExplainable</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">RuleCompletionChecker</span>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3 class="tsd-before-signature">Callable</h3>
-				<ul class="tsd-signatures tsd-kind-interface tsd-parent-kind-external-module">
-					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>this<span class="tsd-signature-symbol">: </span><a href="mockrule.mockrule-2.html" class="tsd-signature-type">MockRule</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/e417a7c/src/rules/mock-rule-types.ts#L38">rules/mock-rule-types.ts:38</a></li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>this: <a href="mockrule.mockrule-2.html" class="tsd-signature-type">MockRule</a></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						<span class="target">MethodMatcherData</span>
 					</li>
 				</ul>
 			</section>
@@ -106,41 +79,69 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-inherited">
-							<h3>Methods</h3>
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited"><a href="mockrule.rulecompletionchecker.html#explain" class="tsd-kind-icon">explain</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="mockruledata.methodmatcherdata.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="mockruledata.methodmatcherdata.html#method" class="tsd-kind-icon">method</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="mockruledata.methodmatcherdata.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
-					<a name="explain" class="tsd-anchor"></a>
-					<h3>explain</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">explain<span class="tsd-signature-symbol">(</span>this<span class="tsd-signature-symbol">: </span><a href="mockrule.mockrule-2.html" class="tsd-signature-type">MockRule</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Method<wbr>Matcher<wbr>Data<span class="tsd-signature-symbol">(</span>method<span class="tsd-signature-symbol">: </span><a href="../enums/internal.method.html" class="tsd-signature-type">Method</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockruledata.methodmatcherdata.html" class="tsd-signature-type">MethodMatcherData</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="mockrule.ruleexplainable.html">RuleExplainable</a>.<a href="mockrule.ruleexplainable.html#explain">explain</a></p>
-								<p>Overrides <a href="internal.explainable.html">Explainable</a>.<a href="internal.explainable.html#explain">explain</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/e417a7c/src/rules/mock-rule-types.ts#L27">rules/mock-rule-types.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/e417a7c/src/rules/matchers.ts#L37">rules/matchers.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>this: <a href="mockrule.mockrule-2.html" class="tsd-signature-type">MockRule</a></h5>
+									<h5>method: <a href="../enums/internal.method.html" class="tsd-signature-type">Method</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="mockruledata.methodmatcherdata.html" class="tsd-signature-type">MethodMatcherData</a></h4>
 						</li>
 					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="method" class="tsd-anchor"></a>
+					<h3>method</h3>
+					<div class="tsd-signature tsd-kind-icon">method<span class="tsd-signature-symbol">:</span> <a href="../enums/internal.method.html" class="tsd-signature-type">Method</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/e417a7c/src/rules/matchers.ts#L40">rules/matchers.ts:40</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"method"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;method&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/e417a7c/src/rules/matchers.ts#L37">rules/matchers.ts:37</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -153,10 +154,10 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/internal.html">Internal</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/mockrule.html">Mock<wbr>Rule</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/mockruledata.html">Mock<wbr>Rule<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -166,42 +167,24 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/mockrule.mockrule-1.html" class="tsd-kind-icon">Mock<wbr>Rule</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/mockrule.mockrulebuilder.html" class="tsd-kind-icon">Mock<wbr>Rule<wbr>Builder</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="mockrule.mockrule-2.html" class="tsd-kind-icon">Mock<wbr>Rule</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="mockrule.mockruledata.html" class="tsd-kind-icon">Mock<wbr>Rule<wbr>Data</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="mockrule.requesthandler.html" class="tsd-kind-icon">Request<wbr>Handler</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="mockrule.requestmatcher.html" class="tsd-kind-icon">Request<wbr>Matcher</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="mockrule.rulecompletionchecker.html" class="tsd-kind-icon">Rule<wbr>Completion<wbr>Checker</a>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="mockruledata.methodmatcherdata.html" class="tsd-kind-icon">Method<wbr>Matcher<wbr>Data</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
-								<a href="mockrule.rulecompletionchecker.html#explain" class="tsd-kind-icon">explain</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="mockruledata.methodmatcherdata.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="mockruledata.methodmatcherdata.html#method" class="tsd-kind-icon">method</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="mockruledata.methodmatcherdata.html#type" class="tsd-kind-icon">type</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="mockrule.ruleexplainable.html" class="tsd-kind-icon">Rule<wbr>Explainable</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/mockrule.html#serializeruledata" class="tsd-kind-icon">serialize<wbr>Rule<wbr>Data</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
