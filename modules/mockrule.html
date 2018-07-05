@@ -89,6 +89,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="mockrule.html#deserializeruledata" class="tsd-kind-icon">deserialize<wbr>Rule<wbr>Data</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="mockrule.html#serializeruledata" class="tsd-kind-icon">serialize<wbr>Rule<wbr>Data</a></li>
 							</ul>
 						</section>
@@ -98,16 +99,42 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="serializeruledata" class="tsd-anchor"></a>
-					<h3>serialize<wbr>Rule<wbr>Data</h3>
+					<a name="deserializeruledata" class="tsd-anchor"></a>
+					<h3>deserialize<wbr>Rule<wbr>Data</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">serialize<wbr>Rule<wbr>Data<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="../interfaces/mockrule.mockruledata.html" class="tsd-signature-type">MockRuleData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+						<li class="tsd-signature tsd-kind-icon">deserialize<wbr>Rule<wbr>Data<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, options<span class="tsd-signature-symbol">?: </span><a href="_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/mockrule.mockruledata.html" class="tsd-signature-type">MockRuleData</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/d335be8/src/rules/mock-rule.ts#L23">rules/mock-rule.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/dade246/src/rules/mock-rule.ts#L32">rules/mock-rule.ts:32</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/mockrule.mockruledata.html" class="tsd-signature-type">MockRuleData</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="serializeruledata" class="tsd-anchor"></a>
+					<h3>serialize<wbr>Rule<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">serialize<wbr>Rule<wbr>Data<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="../interfaces/mockrule.mockruledata.html" class="tsd-signature-type">MockRuleData</a>, options<span class="tsd-signature-symbol">?: </span><a href="_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/dade246/src/rules/mock-rule.ts#L24">rules/mock-rule.ts:24</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -115,17 +142,20 @@
 								<li>
 									<h5>data: <a href="../interfaces/mockrule.mockruledata.html" class="tsd-signature-type">MockRuleData</a></h5>
 								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a></h5>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
 							<ul class="tsd-parameters">
 								<li class="tsd-parameter">
-									<h5>completion<wbr>Checker<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../classes/mockruledata.alwaysdata.html" class="tsd-signature-type">AlwaysData</a><span class="tsd-signature-symbol"> | </span><a href="../classes/mockruledata.oncedata.html" class="tsd-signature-type">OnceData</a><span class="tsd-signature-symbol"> | </span><a href="../classes/mockruledata.twicedata.html" class="tsd-signature-type">TwiceData</a><span class="tsd-signature-symbol"> | </span><a href="../classes/mockruledata.thricedata.html" class="tsd-signature-type">ThriceData</a><span class="tsd-signature-symbol"> | </span><a href="../classes/mockruledata.timesdata.html" class="tsd-signature-type">TimesData</a></h5>
+									<h5>completion<wbr>Checker<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
 								</li>
 								<li class="tsd-parameter">
-									<h5>handler<span class="tsd-signature-symbol">: </span><a href="../classes/mockruledata.simplehandlerdata.html" class="tsd-signature-type">SimpleHandlerData</a><span class="tsd-signature-symbol"> | </span><a href="../classes/mockruledata.callbackhandlerdata.html" class="tsd-signature-type">CallbackHandlerData</a><span class="tsd-signature-symbol"> | </span><a href="../classes/mockruledata.passthroughhandlerdata.html" class="tsd-signature-type">PassThroughHandlerData</a><span class="tsd-signature-symbol"> | </span><a href="../classes/mockruledata.closeconnectionhandlerdata.html" class="tsd-signature-type">CloseConnectionHandlerData</a><span class="tsd-signature-symbol"> | </span><a href="../classes/mockruledata.timeouthandlerdata.html" class="tsd-signature-type">TimeoutHandlerData</a></h5>
+									<h5>handler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
 								</li>
 								<li class="tsd-parameter">
-									<h5>matchers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><a href="../classes/mockruledata.wildcardmatcherdata.html" class="tsd-signature-type">WildcardMatcherData</a><span class="tsd-signature-symbol"> | </span><a href="../classes/mockruledata.methodmatcherdata.html" class="tsd-signature-type">MethodMatcherData</a><span class="tsd-signature-symbol"> | </span><a href="../classes/mockruledata.simplepathmatcherdata.html" class="tsd-signature-type">SimplePathMatcherData</a><span class="tsd-signature-symbol"> | </span><a href="../classes/mockruledata.regexpathmatcherdata.html" class="tsd-signature-type">RegexPathMatcherData</a><span class="tsd-signature-symbol"> | </span><a href="../classes/mockruledata.headermatcherdata.html" class="tsd-signature-type">HeaderMatcherData</a><span class="tsd-signature-symbol"> | </span><a href="../classes/mockruledata.formdatamatcherdata.html" class="tsd-signature-type">FormDataMatcherData</a><span class="tsd-signature-symbol"> | </span><a href="../classes/mockruledata.rawbodymatcherdata.html" class="tsd-signature-type">RawBodyMatcherData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>matchers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 						</li>
@@ -138,6 +168,9 @@
 				<ul>
 					<li class="globals  ">
 						<a href="../index.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_util_serialization_.html">"util/serialization"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="internal.html">Internal</a>
@@ -178,6 +211,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/mockrule.ruleexplainable.html" class="tsd-kind-icon">Rule<wbr>Explainable</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="mockrule.html#deserializeruledata" class="tsd-kind-icon">deserialize<wbr>Rule<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="mockrule.html#serializeruledata" class="tsd-kind-icon">serialize<wbr>Rule<wbr>Data</a>

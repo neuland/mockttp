@@ -71,7 +71,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">WildcardMatcherData</span>
+						<a href="_util_serialization_.serializable.html" class="tsd-signature-type">Serializable</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">WildcardMatcherData</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -85,6 +90,14 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="mockruledata.wildcardmatcherdata.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockruledata.wildcardmatcherdata.html#buildmatcher" class="tsd-kind-icon">build<wbr>Matcher</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="mockruledata.wildcardmatcherdata.html#serialize" class="tsd-kind-icon">serialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="mockruledata.wildcardmatcherdata.html#deserialize" class="tsd-kind-icon">deserialize</a></li>
+							</ul>
+						</section>
 					</div>
 				</section>
 			</section>
@@ -96,9 +109,83 @@
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"wildcard"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;wildcard&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/d335be8/src/rules/matchers.ts#L35">rules/matchers.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/dade246/src/rules/matchers.ts#L14">rules/matchers.ts:14</a></li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="buildmatcher" class="tsd-anchor"></a>
+					<h3>build<wbr>Matcher</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">build<wbr>Matcher<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/dade246/src/rules/matchers.ts#L16">rules/matchers.ts:16</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span>
+								<span class="tsd-signature-symbol"> &amp; </span>
+								<span class="tsd-signature-type">object</span>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="serialize" class="tsd-anchor"></a>
+					<h3>serialize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">serialize<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="../modules/_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_util_serialization_.serializable.html">Serializable</a>.<a href="_util_serialization_.serializable.html#serialize">serialize</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/dade246/src/util/serialization.ts#L10">util/serialization.ts:10</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../modules/_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="deserialize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> deserialize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">deserialize<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, options<span class="tsd-signature-symbol">?: </span><a href="../modules/_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_util_serialization_.serializable.html">Serializable</a>.<a href="_util_serialization_.serializable.html#deserialize">deserialize</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/dade246/src/util/serialization.ts#L16">util/serialization.ts:16</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../modules/_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -107,6 +194,9 @@
 				<ul>
 					<li class="globals  ">
 						<a href="../index.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_util_serialization_.html">"util/serialization"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/internal.html">Internal</a>
@@ -124,6 +214,54 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="mockruledata.alwaysdata.html" class="tsd-kind-icon">Always<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="mockruledata.callbackhandlerdata.html" class="tsd-kind-icon">Callback<wbr>Handler<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="mockruledata.closeconnectionhandlerdata.html" class="tsd-kind-icon">Close<wbr>Connection<wbr>Handler<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="mockruledata.formdatamatcherdata.html" class="tsd-kind-icon">Form<wbr>Data<wbr>Matcher<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="mockruledata.headermatcherdata.html" class="tsd-kind-icon">Header<wbr>Matcher<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="mockruledata.methodmatcherdata.html" class="tsd-kind-icon">Method<wbr>Matcher<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="mockruledata.oncedata.html" class="tsd-kind-icon">Once<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="mockruledata.passthroughhandlerdata.html" class="tsd-kind-icon">Pass<wbr>Through<wbr>Handler<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="mockruledata.rawbodymatcherdata.html" class="tsd-kind-icon">Raw<wbr>Body<wbr>Matcher<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="mockruledata.regexpathmatcherdata.html" class="tsd-kind-icon">Regex<wbr>Path<wbr>Matcher<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="mockruledata.simplehandlerdata.html" class="tsd-kind-icon">Simple<wbr>Handler<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="mockruledata.simplepathmatcherdata.html" class="tsd-kind-icon">Simple<wbr>Path<wbr>Matcher<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="mockruledata.thricedata.html" class="tsd-kind-icon">Thrice<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="mockruledata.timeouthandlerdata.html" class="tsd-kind-icon">Timeout<wbr>Handler<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="mockruledata.timesdata.html" class="tsd-kind-icon">Times<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="mockruledata.twicedata.html" class="tsd-kind-icon">Twice<wbr>Data</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
@@ -132,10 +270,88 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="mockruledata.wildcardmatcherdata.html#type" class="tsd-kind-icon">type</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="mockruledata.wildcardmatcherdata.html#buildmatcher" class="tsd-kind-icon">build<wbr>Matcher</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="mockruledata.wildcardmatcherdata.html#serialize" class="tsd-kind-icon">serialize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="mockruledata.wildcardmatcherdata.html#deserialize" class="tsd-kind-icon">deserialize</a>
+							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/mockruledata.callbackhandlerresult.html" class="tsd-kind-icon">Callback<wbr>Handler<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/mockruledata.callbackrequestmessage.html" class="tsd-kind-icon">Callback<wbr>Request<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/mockruledata.callbackresponsemessage.html" class="tsd-kind-icon">Callback<wbr>Response<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/mockruledata.serializedcallbackhandlerdata.html" class="tsd-kind-icon">Serialized<wbr>Callback<wbr>Handler<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/mockruledata.streammessage.html" class="tsd-kind-icon">Stream<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/mockruledata.html#completioncheckerdata" class="tsd-kind-icon">Completion<wbr>Checker<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/mockruledata.html#handlerdata" class="tsd-kind-icon">Handler<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/mockruledata.html#matcherdata" class="tsd-kind-icon">Matcher<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/mockruledata.html#serializedbuffer" class="tsd-kind-icon">Serialized<wbr>Buffer</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/mockruledata.html#currentlyforwardingports" class="tsd-kind-icon">currently<wbr>Forwarding<wbr>Ports</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/mockruledata.html#localaddresses" class="tsd-kind-icon">local<wbr>Addresses</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/mockruledata.html#buildcompletionchecker" class="tsd-kind-icon">build<wbr>Completion<wbr>Checker</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/mockruledata.html#buildhandler" class="tsd-kind-icon">build<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/mockruledata.html#buildmatchers" class="tsd-kind-icon">build<wbr>Matchers</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/mockruledata.html#checktimes" class="tsd-kind-icon">check<wbr>Times</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/mockruledata.html#combinematchers" class="tsd-kind-icon">combine<wbr>Matchers</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/mockruledata.html#explainuntil" class="tsd-kind-icon">explain<wbr>Until</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/mockruledata.html#isrequestloop" class="tsd-kind-icon">is<wbr>Request<wbr>Loop</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/mockruledata.html#isserializedbuffer" class="tsd-kind-icon">is<wbr>Serialized<wbr>Buffer</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../modules/mockruledata.html#withexplanation" class="tsd-kind-icon">with<wbr>Explanation</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
+						<a href="../modules/mockruledata.html#completioncheckerdatalookup" class="tsd-kind-icon">Completion<wbr>Checker<wbr>Data<wbr>Lookup</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
+						<a href="../modules/mockruledata.html#handlerdatalookup" class="tsd-kind-icon">Handler<wbr>Data<wbr>Lookup</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
+						<a href="../modules/mockruledata.html#matcherdatalookup" class="tsd-kind-icon">Matcher<wbr>Data<wbr>Lookup</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MockedEndpoint | mockttp</title>
+	<title>Serializable | mockttp</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../index.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/mockttp.html">Mockttp</a>
+					<a href="../modules/_util_serialization_.html">&quot;util/serialization&quot;</a>
 				</li>
 				<li>
-					<a href="mockttp.mockedendpoint-1.html">MockedEndpoint</a>
+					<a href="_util_serialization_.serializable.html">Serializable</a>
 				</li>
 			</ul>
-			<h1>Interface MockedEndpoint</h1>
+			<h1>Class Serializable</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,60 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">MockedEndpoint</span>
+						<span class="target">Serializable</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="mockruledata.simplehandlerdata.html" class="tsd-signature-type">SimpleHandlerData</a>
+							</li>
+							<li>
+								<a href="mockruledata.callbackhandlerdata.html" class="tsd-signature-type">CallbackHandlerData</a>
+							</li>
+							<li>
+								<a href="mockruledata.passthroughhandlerdata.html" class="tsd-signature-type">PassThroughHandlerData</a>
+							</li>
+							<li>
+								<a href="mockruledata.closeconnectionhandlerdata.html" class="tsd-signature-type">CloseConnectionHandlerData</a>
+							</li>
+							<li>
+								<a href="mockruledata.timeouthandlerdata.html" class="tsd-signature-type">TimeoutHandlerData</a>
+							</li>
+							<li>
+								<a href="mockruledata.alwaysdata.html" class="tsd-signature-type">AlwaysData</a>
+							</li>
+							<li>
+								<a href="mockruledata.oncedata.html" class="tsd-signature-type">OnceData</a>
+							</li>
+							<li>
+								<a href="mockruledata.twicedata.html" class="tsd-signature-type">TwiceData</a>
+							</li>
+							<li>
+								<a href="mockruledata.thricedata.html" class="tsd-signature-type">ThriceData</a>
+							</li>
+							<li>
+								<a href="mockruledata.timesdata.html" class="tsd-signature-type">TimesData</a>
+							</li>
+							<li>
+								<a href="mockruledata.wildcardmatcherdata.html" class="tsd-signature-type">WildcardMatcherData</a>
+							</li>
+							<li>
+								<a href="mockruledata.methodmatcherdata.html" class="tsd-signature-type">MethodMatcherData</a>
+							</li>
+							<li>
+								<a href="mockruledata.simplepathmatcherdata.html" class="tsd-signature-type">SimplePathMatcherData</a>
+							</li>
+							<li>
+								<a href="mockruledata.regexpathmatcherdata.html" class="tsd-signature-type">RegexPathMatcherData</a>
+							</li>
+							<li>
+								<a href="mockruledata.headermatcherdata.html" class="tsd-signature-type">HeaderMatcherData</a>
+							</li>
+							<li>
+								<a href="mockruledata.formdatamatcherdata.html" class="tsd-signature-type">FormDataMatcherData</a>
+							</li>
+							<li>
+								<a href="mockruledata.rawbodymatcherdata.html" class="tsd-signature-type">RawBodyMatcherData</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -82,7 +135,8 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="mockttp.mockedendpoint-1.html#getseenrequests" class="tsd-kind-icon">get<wbr>Seen<wbr>Requests</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_util_serialization_.serializable.html#serialize" class="tsd-kind-icon">serialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_util_serialization_.serializable.html#deserialize" class="tsd-kind-icon">deserialize</a></li>
 							</ul>
 						</section>
 					</div>
@@ -90,20 +144,52 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="getseenrequests" class="tsd-anchor"></a>
-					<h3>get<wbr>Seen<wbr>Requests</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Seen<wbr>Requests<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Request</span><span class="tsd-signature-symbol">[]</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="serialize" class="tsd-anchor"></a>
+					<h3>serialize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">serialize<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="../modules/_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/dade246/src/main.ts#L13">main.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/dade246/src/util/serialization.ts#L10">util/serialization.ts:10</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Request</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../modules/_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="deserialize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> deserialize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">deserialize<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, options<span class="tsd-signature-symbol">?: </span><a href="../modules/_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/dade246/src/util/serialization.ts#L16">util/serialization.ts:16</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../modules/_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -115,7 +201,7 @@
 					<li class="globals  ">
 						<a href="../index.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_util_serialization_.html">"util/serialization"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -127,66 +213,33 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/mockruledata.html">Mock<wbr>Rule<wbr>Data</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/mockttp.html">Mockttp</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/mockttp.connectionerror.html" class="tsd-kind-icon">Connection<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/mockttp.graphqlerror.html" class="tsd-kind-icon">GraphQLError</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/mockttp.mockedendpoint.html" class="tsd-kind-icon">Mocked<wbr>Endpoint</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/mockttp.mockttpclient.html" class="tsd-kind-icon">Mockttp<wbr>Client</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/mockttp.mockttpserver.html" class="tsd-kind-icon">Mockttp<wbr>Server</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/mockttp.mockttpstandalone.html" class="tsd-kind-icon">Mockttp<wbr>Standalone</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/mockttp.requesterror.html" class="tsd-kind-icon">Request<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="mockttp.mockserverconfig.html" class="tsd-kind-icon">Mock<wbr>Server<wbr>Config</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="mockttp.mockedendpoint-1.html" class="tsd-kind-icon">Mocked<wbr>Endpoint</a>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_util_serialization_.serializable.html" class="tsd-kind-icon">Serializable</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="mockttp.mockedendpoint-1.html#getseenrequests" class="tsd-kind-icon">get<wbr>Seen<wbr>Requests</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_util_serialization_.serializable.html#serialize" class="tsd-kind-icon">serialize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_util_serialization_.serializable.html#deserialize" class="tsd-kind-icon">deserialize</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="mockttp.mockttp-1.html" class="tsd-kind-icon">Mockttp</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_util_serialization_.html#serializationoptions" class="tsd-kind-icon">Serialization<wbr>Options</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="mockttp.mockttpoptions.html" class="tsd-kind-icon">Mockttp<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="mockttp.standaloneserveroptions.html" class="tsd-kind-icon">Standalone<wbr>Server<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/mockttp.html#getlocal" class="tsd-kind-icon">get<wbr>Local</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/mockttp.html#getremote" class="tsd-kind-icon">get<wbr>Remote</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/mockttp.html#getstandalone" class="tsd-kind-icon">get<wbr>Standalone</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="../modules/_util_serialization_.html#deserialize" class="tsd-kind-icon">deserialize</a>
 					</li>
 				</ul>
 			</nav>
