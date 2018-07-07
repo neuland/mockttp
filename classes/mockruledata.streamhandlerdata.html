@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>RegexPathMatcherData | mockttp</title>
+	<title>StreamHandlerData | mockttp</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/mockruledata.html">MockRuleData</a>
 				</li>
 				<li>
-					<a href="mockruledata.regexpathmatcherdata.html">RegexPathMatcherData</a>
+					<a href="mockruledata.streamhandlerdata.html">StreamHandlerData</a>
 				</li>
 			</ul>
-			<h1>Class RegexPathMatcherData</h1>
+			<h1>Class StreamHandlerData</h1>
 		</div>
 	</div>
 </header>
@@ -74,7 +74,7 @@
 						<a href="_util_serialization_.serializable.html" class="tsd-signature-type">Serializable</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">RegexPathMatcherData</span>
+								<span class="target">StreamHandlerData</span>
 							</li>
 						</ul>
 					</li>
@@ -87,22 +87,24 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="mockruledata.regexpathmatcherdata.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="mockruledata.streamhandlerdata.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="mockruledata.regexpathmatcherdata.html#regexstring" class="tsd-kind-icon">regex<wbr>String</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="mockruledata.regexpathmatcherdata.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="mockruledata.streamhandlerdata.html#headers" class="tsd-kind-icon">headers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="mockruledata.streamhandlerdata.html#status" class="tsd-kind-icon">status</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="mockruledata.streamhandlerdata.html#stream" class="tsd-kind-icon">stream</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="mockruledata.streamhandlerdata.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockruledata.regexpathmatcherdata.html#buildmatcher" class="tsd-kind-icon">build<wbr>Matcher</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="mockruledata.regexpathmatcherdata.html#serialize" class="tsd-kind-icon">serialize</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="mockruledata.regexpathmatcherdata.html#deserialize" class="tsd-kind-icon">deserialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockruledata.streamhandlerdata.html#buildhandler" class="tsd-kind-icon">build<wbr>Handler</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="mockruledata.streamhandlerdata.html#serialize" class="tsd-kind-icon">serialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-static"><a href="mockruledata.streamhandlerdata.html#deserialize" class="tsd-kind-icon">deserialize</a></li>
 							</ul>
 						</section>
 					</div>
@@ -114,22 +116,28 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Regex<wbr>Path<wbr>Matcher<wbr>Data<span class="tsd-signature-symbol">(</span>regex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockruledata.regexpathmatcherdata.html" class="tsd-signature-type">RegexPathMatcherData</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Stream<wbr>Handler<wbr>Data<span class="tsd-signature-symbol">(</span>status<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, stream<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readable</span>, headers<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">http.OutgoingHttpHeaders</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockruledata.streamhandlerdata.html" class="tsd-signature-type">StreamHandlerData</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f2af185/src/rules/matchers.ts#L62">rules/matchers.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f2af185/src/rules/handlers.ts#L229">rules/handlers.ts:229</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>regex: <span class="tsd-signature-type">RegExp</span></h5>
+									<h5>status: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>stream: <span class="tsd-signature-type">Readable</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> headers: <span class="tsd-signature-type">http.OutgoingHttpHeaders</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="mockruledata.regexpathmatcherdata.html" class="tsd-signature-type">RegexPathMatcherData</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="mockruledata.streamhandlerdata.html" class="tsd-signature-type">StreamHandlerData</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -137,22 +145,42 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="regexstring" class="tsd-anchor"></a>
-					<h3>regex<wbr>String</h3>
-					<div class="tsd-signature tsd-kind-icon">regex<wbr>String<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="headers" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> headers</h3>
+					<div class="tsd-signature tsd-kind-icon">headers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">http.OutgoingHttpHeaders</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f2af185/src/rules/matchers.ts#L62">rules/matchers.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f2af185/src/rules/handlers.ts#L234">rules/handlers.ts:234</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="status" class="tsd-anchor"></a>
+					<h3>status</h3>
+					<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f2af185/src/rules/handlers.ts#L232">rules/handlers.ts:232</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="stream" class="tsd-anchor"></a>
+					<h3>stream</h3>
+					<div class="tsd-signature tsd-kind-icon">stream<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Readable</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f2af185/src/rules/handlers.ts#L233">rules/handlers.ts:233</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="type" class="tsd-anchor"></a>
 					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"regex-path"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;regex-path&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"stream"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;stream&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f2af185/src/rules/matchers.ts#L61">rules/matchers.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f2af185/src/rules/handlers.ts#L229">rules/handlers.ts:229</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -160,16 +188,16 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="buildmatcher" class="tsd-anchor"></a>
-					<h3>build<wbr>Matcher</h3>
+					<a name="buildhandler" class="tsd-anchor"></a>
+					<h3>build<wbr>Handler</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">build<wbr>Matcher<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></li>
+						<li class="tsd-signature tsd-kind-icon">build<wbr>Handler<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f2af185/src/rules/matchers.ts#L69">rules/matchers.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f2af185/src/rules/handlers.ts#L239">rules/handlers.ts:239</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span>
@@ -179,18 +207,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="serialize" class="tsd-anchor"></a>
 					<h3>serialize</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">serialize<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="../modules/_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">serialize<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="../modules/_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/mockruledata.serializedstreamhandlerdata.html" class="tsd-signature-type">SerializedStreamHandlerData</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_serialization_.serializable.html">Serializable</a>.<a href="_util_serialization_.serializable.html#serialize">serialize</a></p>
+								<p>Overrides <a href="_util_serialization_.serializable.html">Serializable</a>.<a href="_util_serialization_.serializable.html#serialize">serialize</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f2af185/src/util/serialization.ts#L10">util/serialization.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f2af185/src/rules/handlers.ts#L250">rules/handlers.ts:250</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -199,34 +227,34 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../modules/_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/mockruledata.serializedstreamhandlerdata.html" class="tsd-signature-type">SerializedStreamHandlerData</a></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-static">
 					<a name="deserialize" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> deserialize</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">deserialize<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, options<span class="tsd-signature-symbol">?: </span><a href="../modules/_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">deserialize<span class="tsd-signature-symbol">(</span>handlerData<span class="tsd-signature-symbol">: </span><a href="../interfaces/mockruledata.serializedstreamhandlerdata.html" class="tsd-signature-type">SerializedStreamHandlerData</a>, options<span class="tsd-signature-symbol">?: </span><a href="../modules/_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockruledata.streamhandlerdata.html" class="tsd-signature-type">StreamHandlerData</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_serialization_.serializable.html">Serializable</a>.<a href="_util_serialization_.serializable.html#deserialize">deserialize</a></p>
+								<p>Overrides <a href="_util_serialization_.serializable.html">Serializable</a>.<a href="_util_serialization_.serializable.html#deserialize">deserialize</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f2af185/src/util/serialization.ts#L16">util/serialization.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f2af185/src/rules/handlers.ts#L310">rules/handlers.ts:310</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>data: <span class="tsd-signature-type">any</span></h5>
+									<h5>handlerData: <a href="../interfaces/mockruledata.serializedstreamhandlerdata.html" class="tsd-signature-type">SerializedStreamHandlerData</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../modules/_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="mockruledata.streamhandlerdata.html" class="tsd-signature-type">StreamHandlerData</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -260,25 +288,31 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="mockruledata.regexpathmatcherdata.html" class="tsd-kind-icon">Regex<wbr>Path<wbr>Matcher<wbr>Data</a>
+						<a href="mockruledata.streamhandlerdata.html" class="tsd-kind-icon">Stream<wbr>Handler<wbr>Data</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="mockruledata.regexpathmatcherdata.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="mockruledata.streamhandlerdata.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="mockruledata.regexpathmatcherdata.html#regexstring" class="tsd-kind-icon">regex<wbr>String</a>
+								<a href="mockruledata.streamhandlerdata.html#headers" class="tsd-kind-icon">headers</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="mockruledata.regexpathmatcherdata.html#type" class="tsd-kind-icon">type</a>
+								<a href="mockruledata.streamhandlerdata.html#status" class="tsd-kind-icon">status</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="mockruledata.streamhandlerdata.html#stream" class="tsd-kind-icon">stream</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="mockruledata.streamhandlerdata.html#type" class="tsd-kind-icon">type</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="mockruledata.regexpathmatcherdata.html#buildmatcher" class="tsd-kind-icon">build<wbr>Matcher</a>
+								<a href="mockruledata.streamhandlerdata.html#buildhandler" class="tsd-kind-icon">build<wbr>Handler</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="mockruledata.regexpathmatcherdata.html#serialize" class="tsd-kind-icon">serialize</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="mockruledata.streamhandlerdata.html#serialize" class="tsd-kind-icon">serialize</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="mockruledata.regexpathmatcherdata.html#deserialize" class="tsd-kind-icon">deserialize</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-static">
+								<a href="mockruledata.streamhandlerdata.html#deserialize" class="tsd-kind-icon">deserialize</a>
 							</li>
 						</ul>
 					</li>

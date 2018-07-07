@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>StreamMessage | mockttp</title>
+	<title>StreamHandlerMessage | mockttp</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/mockruledata.html">MockRuleData</a>
 				</li>
 				<li>
-					<a href="mockruledata.streammessage.html">StreamMessage</a>
+					<a href="mockruledata.streamhandlermessage.html">StreamHandlerMessage</a>
 				</li>
 			</ul>
-			<h1>Interface StreamMessage</h1>
+			<h1>Interface StreamHandlerMessage</h1>
 		</div>
 	</div>
 </header>
@@ -71,16 +71,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">StreamMessage</span>
+						<a href="mockruledata.streammessage.html" class="tsd-signature-type">StreamMessage</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<a href="mockruledata.callbackrequestmessage.html" class="tsd-signature-type">CallbackRequestMessage</a>
-							</li>
-							<li>
-								<a href="mockruledata.callbackresponsemessage.html" class="tsd-signature-type">CallbackResponseMessage</a>
-							</li>
-							<li>
-								<a href="mockruledata.streamhandlermessage.html" class="tsd-signature-type">StreamHandlerMessage</a>
+								<span class="target">StreamHandlerMessage</span>
 							</li>
 						</ul>
 					</li>
@@ -93,7 +87,9 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="mockruledata.streammessage.html#topicid" class="tsd-kind-icon">topic<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="mockruledata.streamhandlermessage.html#content" class="tsd-kind-icon">content</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="mockruledata.streamhandlermessage.html#event" class="tsd-kind-icon">event</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="mockruledata.streamhandlermessage.html#topicid" class="tsd-kind-icon">topic<wbr>Id</a></li>
 							</ul>
 						</section>
 					</div>
@@ -102,10 +98,31 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="content" class="tsd-anchor"></a>
+					<h3>content</h3>
+					<div class="tsd-signature tsd-kind-icon">content<span class="tsd-signature-symbol">:</span> <a href="../modules/mockruledata.html#streamhandlereventmessage" class="tsd-signature-type">StreamHandlerEventMessage</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f2af185/src/rules/handlers.ts#L219">rules/handlers.ts:219</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="event" class="tsd-anchor"></a>
+					<h3>event</h3>
+					<div class="tsd-signature tsd-kind-icon">event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"data"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"end"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"close"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"error"</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f2af185/src/rules/handlers.ts#L218">rules/handlers.ts:218</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="topicid" class="tsd-anchor"></a>
 					<h3>topic<wbr>Id</h3>
 					<div class="tsd-signature tsd-kind-icon">topic<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="mockruledata.streammessage.html">StreamMessage</a>.<a href="mockruledata.streammessage.html#topicid">topicId</a></p>
 						<ul>
 							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/f2af185/src/rules/handlers.ts#L73">rules/handlers.ts:73</a></li>
 						</ul>
@@ -141,10 +158,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="mockruledata.streammessage.html" class="tsd-kind-icon">Stream<wbr>Message</a>
+						<a href="mockruledata.streamhandlermessage.html" class="tsd-kind-icon">Stream<wbr>Handler<wbr>Message</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="mockruledata.streammessage.html#topicid" class="tsd-kind-icon">topic<wbr>Id</a>
+								<a href="mockruledata.streamhandlermessage.html#content" class="tsd-kind-icon">content</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="mockruledata.streamhandlermessage.html#event" class="tsd-kind-icon">event</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="mockruledata.streamhandlermessage.html#topicid" class="tsd-kind-icon">topic<wbr>Id</a>
 							</li>
 						</ul>
 					</li>
