@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;util/serialization&quot; | mockttp</title>
+	<title>SerializedCallbackHandlerData | mockttp</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,129 +54,80 @@
 					<a href="../index.html">Globals</a>
 				</li>
 				<li>
-					<a href="_util_serialization_.html">&quot;util/serialization&quot;</a>
+					<a href="../modules/mockruledata.html">MockRuleData</a>
+				</li>
+				<li>
+					<a href="mockruledata.serializedcallbackhandlerdata.html">SerializedCallbackHandlerData</a>
 				</li>
 			</ul>
-			<h1>External module &quot;util/serialization&quot;</h1>
+			<h1>Interface SerializedCallbackHandlerData</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="mockruledata.serializedstreambackedhandlerdata.html" class="tsd-signature-type">SerializedStreamBackedHandlerData</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">SerializedCallbackHandlerData</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Classes</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_util_serialization_.serializable.html" class="tsd-kind-icon">Serializable</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Type aliases</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_util_serialization_.html#serializationoptions" class="tsd-kind-icon">Serialization<wbr>Options</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Functions</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_util_serialization_.html#deserialize" class="tsd-kind-icon">deserialize</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="mockruledata.serializedcallbackhandlerdata.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="mockruledata.serializedcallbackhandlerdata.html#topicid" class="tsd-kind-icon">topic<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="mockruledata.serializedcallbackhandlerdata.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Type aliases</h2>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
-					<a name="serializationoptions" class="tsd-anchor"></a>
-					<h3>Serialization<wbr>Options</h3>
-					<div class="tsd-signature tsd-kind-icon">Serialization<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="name" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a379679/src/util/serialization.ts#L4">util/serialization.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a379679/src/rules/handlers.ts#L78">rules/handlers.ts:78</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> client<wbr>Stream<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Duplex</span></h5>
-							</li>
-						</ul>
-					</div>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-					<a name="deserialize" class="tsd-anchor"></a>
-					<h3>deserialize</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">deserialize&lt;T&gt;<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, lookup<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span>, options<span class="tsd-signature-symbol">?: </span><a href="_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a379679/src/util/serialization.ts#L23">util/serialization.ts:23</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>data: <span class="tsd-signature-type">T</span></h5>
-								</li>
-								<li>
-									<h5>lookup: <span class="tsd-signature-type">object</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-index-signature">
-											<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">object</span></h5>
-											<ul class="tsd-parameters">
-												<li class="tsd-parameter">
-													<h5>deserialize<span class="tsd-signature-symbol">: </span>function</h5>
-													<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal tsd-is-not-exported">
-														<li class="tsd-signature tsd-kind-icon">deserialize<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, options<span class="tsd-signature-symbol">?: </span><a href="_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-													</ul>
-													<ul class="tsd-descriptions">
-														<li class="tsd-description">
-															<aside class="tsd-sources">
-																<ul>
-																	<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a379679/src/util/serialization.ts#L25">util/serialization.ts:25</a></li>
-																</ul>
-															</aside>
-															<h4 class="tsd-parameters-title">Parameters</h4>
-															<ul class="tsd-parameters">
-																<li>
-																	<h5>data: <span class="tsd-signature-type">any</span></h5>
-																</li>
-																<li>
-																	<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a></h5>
-																</li>
-															</ul>
-															<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-														</li>
-												</ul>        </li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <a href="_util_serialization_.html#serializationoptions" class="tsd-signature-type">SerializationOptions</a><span class="tsd-signature-symbol"> =&nbsp;{}</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="topicid" class="tsd-anchor"></a>
+					<h3>topic<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">topic<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="mockruledata.serializedstreambackedhandlerdata.html">SerializedStreamBackedHandlerData</a>.<a href="mockruledata.serializedstreambackedhandlerdata.html#topicid">topicId</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a379679/src/rules/handlers.ts#L70">rules/handlers.ts:70</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="mockruledata.serializedstreambackedhandlerdata.html">SerializedStreamBackedHandlerData</a>.<a href="mockruledata.serializedstreambackedhandlerdata.html#type">type</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a379679/src/rules/handlers.ts#L69">rules/handlers.ts:69</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -186,34 +137,43 @@
 					<li class="globals  ">
 						<a href="../index.html"><em>Globals</em></a>
 					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_util_serialization_.html">"util/serialization"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/internal.html">Internal</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/mockrule.html">Mock<wbr>Rule</a>
+					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_util_serialization_.html">"util/serialization"</a>
+						<a href="../modules/mockruledata.html">Mock<wbr>Rule<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="internal.html">Internal</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="mockrule.html">Mock<wbr>Rule</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="mockruledata.html">Mock<wbr>Rule<wbr>Data</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="mockttp.html">Mockttp</a>
+						<a href="../modules/mockttp.html">Mockttp</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_util_serialization_.serializable.html" class="tsd-kind-icon">Serializable</a>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="mockruledata.serializedcallbackhandlerdata.html" class="tsd-kind-icon">Serialized<wbr>Callback<wbr>Handler<wbr>Data</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="mockruledata.serializedcallbackhandlerdata.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="mockruledata.serializedcallbackhandlerdata.html#topicid" class="tsd-kind-icon">topic<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="mockruledata.serializedcallbackhandlerdata.html#type" class="tsd-kind-icon">type</a>
+							</li>
+						</ul>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="_util_serialization_.html#serializationoptions" class="tsd-kind-icon">Serialization<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_util_serialization_.html#deserialize" class="tsd-kind-icon">deserialize</a>
-					</li>
+				</ul>
+				<ul class="after-current">
 				</ul>
 			</nav>
 		</div>

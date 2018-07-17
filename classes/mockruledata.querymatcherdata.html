@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>OnceData | mockttp</title>
+	<title>QueryMatcherData | mockttp</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/mockruledata.html">MockRuleData</a>
 				</li>
 				<li>
-					<a href="mockruledata.oncedata.html">OnceData</a>
+					<a href="mockruledata.querymatcherdata.html">QueryMatcherData</a>
 				</li>
 			</ul>
-			<h1>Class OnceData</h1>
+			<h1>Class QueryMatcherData</h1>
 		</div>
 	</div>
 </header>
@@ -74,7 +74,7 @@
 						<a href="_util_serialization_.serializable.html" class="tsd-signature-type">Serializable</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">OnceData</span>
+								<span class="target">QueryMatcherData</span>
 							</li>
 						</ul>
 					</li>
@@ -85,31 +85,87 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="mockruledata.querymatcherdata.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="mockruledata.oncedata.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="mockruledata.querymatcherdata.html#queryobject" class="tsd-kind-icon">query<wbr>Object</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="mockruledata.querymatcherdata.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockruledata.oncedata.html#buildcompletionchecker" class="tsd-kind-icon">build<wbr>Completion<wbr>Checker</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="mockruledata.oncedata.html#serialize" class="tsd-kind-icon">serialize</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="mockruledata.oncedata.html#deserialize" class="tsd-kind-icon">deserialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mockruledata.querymatcherdata.html#buildmatcher" class="tsd-kind-icon">build<wbr>Matcher</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="mockruledata.querymatcherdata.html#serialize" class="tsd-kind-icon">serialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="mockruledata.querymatcherdata.html#deserialize" class="tsd-kind-icon">deserialize</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Query<wbr>Matcher<wbr>Data<span class="tsd-signature-symbol">(</span>queryObject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mockruledata.querymatcherdata.html" class="tsd-signature-type">QueryMatcherData</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a379679/src/rules/matchers.ts#L106">rules/matchers.ts:106</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>queryObject: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-index-signature">
+											<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="mockruledata.querymatcherdata.html" class="tsd-signature-type">QueryMatcherData</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="queryobject" class="tsd-anchor"></a>
+					<h3>query<wbr>Object</h3>
+					<div class="tsd-signature tsd-kind-icon">query<wbr>Object<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a379679/src/rules/matchers.ts#L109">rules/matchers.ts:109</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="type" class="tsd-anchor"></a>
 					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"once"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;once&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"query"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;query&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a379679/src/rules/completion-checkers.ts#L22">rules/completion-checkers.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a379679/src/rules/matchers.ts#L106">rules/matchers.ts:106</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -117,21 +173,21 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="buildcompletionchecker" class="tsd-anchor"></a>
-					<h3>build<wbr>Completion<wbr>Checker</h3>
+					<a name="buildmatcher" class="tsd-anchor"></a>
+					<h3>build<wbr>Matcher</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">build<wbr>Completion<wbr>Checker<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/mockrule.ruleexplainable.html" class="tsd-signature-type">RuleExplainable</a></li>
+						<li class="tsd-signature tsd-kind-icon">build<wbr>Matcher<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a379679/src/rules/completion-checkers.ts#L24">rules/completion-checkers.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/a379679/src/rules/matchers.ts#L114">rules/matchers.ts:114</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">function</span>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span>
 								<span class="tsd-signature-symbol"> &amp; </span>
-								<a href="../interfaces/mockrule.ruleexplainable.html" class="tsd-signature-type">RuleExplainable</a>
+								<span class="tsd-signature-type">object</span>
 							</h4>
 						</li>
 					</ul>
@@ -217,19 +273,25 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="mockruledata.oncedata.html" class="tsd-kind-icon">Once<wbr>Data</a>
+						<a href="mockruledata.querymatcherdata.html" class="tsd-kind-icon">Query<wbr>Matcher<wbr>Data</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="mockruledata.querymatcherdata.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="mockruledata.oncedata.html#type" class="tsd-kind-icon">type</a>
+								<a href="mockruledata.querymatcherdata.html#queryobject" class="tsd-kind-icon">query<wbr>Object</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="mockruledata.querymatcherdata.html#type" class="tsd-kind-icon">type</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="mockruledata.oncedata.html#buildcompletionchecker" class="tsd-kind-icon">build<wbr>Completion<wbr>Checker</a>
+								<a href="mockruledata.querymatcherdata.html#buildmatcher" class="tsd-kind-icon">build<wbr>Matcher</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="mockruledata.oncedata.html#serialize" class="tsd-kind-icon">serialize</a>
+								<a href="mockruledata.querymatcherdata.html#serialize" class="tsd-kind-icon">serialize</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="mockruledata.oncedata.html#deserialize" class="tsd-kind-icon">deserialize</a>
+								<a href="mockruledata.querymatcherdata.html#deserialize" class="tsd-kind-icon">deserialize</a>
 							</li>
 						</ul>
 					</li>
