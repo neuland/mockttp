@@ -84,15 +84,18 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/internal.completedbody.html" class="tsd-kind-icon">Completed<wbr>Body</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/internal.completedrequest.html" class="tsd-kind-icon">Completed<wbr>Request</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/internal.completedresponse.html" class="tsd-kind-icon">Completed<wbr>Response</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/internal.destroyableserver.html" class="tsd-kind-icon">Destroyable<wbr>Server</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/internal.explainable.html" class="tsd-kind-icon">Explainable</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/internal.mockedendpoint.html" class="tsd-kind-icon">Mocked<wbr>Endpoint</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/internal.mockedendpointdata.html" class="tsd-kind-icon">Mocked<wbr>Endpoint<wbr>Data</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/internal.ongoingrequest.html" class="tsd-kind-icon">Ongoing<wbr>Request</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/internal.ongoingresponse.html" class="tsd-kind-icon">Ongoing<wbr>Response</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/internal.parsedbody.html" class="tsd-kind-icon">Parsed<wbr>Body</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/internal.proxyconfig.html" class="tsd-kind-icon">Proxy<wbr>Config</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/internal.request.html" class="tsd-kind-icon">Request</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/internal.response.html" class="tsd-kind-icon">Response</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -110,6 +113,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="internal.html#default_standalone_port" class="tsd-kind-icon">DEFAULT_<wbr>STANDALONE_<wbr>PORT</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="internal.html#request_received_topic" class="tsd-kind-icon">REQUEST_<wbr>RECEIVED_<wbr>TOPIC</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="internal.html#response_completed_topic" class="tsd-kind-icon">RESPONSE_<wbr>COMPLETED_<wbr>TOPIC</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -124,8 +128,13 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="internal.html#normalize" class="tsd-kind-icon">normalize</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="internal.html#parseanyast" class="tsd-kind-icon">parse<wbr>Any<wbr>Ast</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="internal.html#parsebody" class="tsd-kind-icon">parse<wbr>Body</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="internal.html#parsebodystream" class="tsd-kind-icon">parse<wbr>Body<wbr>Stream</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="internal.html#readfile" class="tsd-kind-icon">read<wbr>File</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="internal.html#streamtobuffer" class="tsd-kind-icon">stream<wbr>ToBuffer</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="internal.html#trackresponse" class="tsd-kind-icon">track<wbr>Response</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="internal.html#waitforbody" class="tsd-kind-icon">wait<wbr>For<wbr>Body</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="internal.html#waitforcompletedrequest" class="tsd-kind-icon">wait<wbr>For<wbr>Completed<wbr>Request</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="internal.html#waitforcompletedresponse" class="tsd-kind-icon">wait<wbr>For<wbr>Completed<wbr>Response</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
@@ -145,7 +154,7 @@
 					<div class="tsd-signature tsd-kind-icon">CAOptions<span class="tsd-signature-symbol">:</span> <a href="internal.html#httpsoptions" class="tsd-signature-type">HttpsOptions</a><span class="tsd-signature-symbol"> | </span><a href="internal.html#httpspathoptions" class="tsd-signature-type">HttpsPathOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/util/tls.ts#L10">util/tls.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/util/tls.ts#L10">util/tls.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -155,7 +164,7 @@
 					<div class="tsd-signature tsd-kind-icon">Generated<wbr>Certificate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/util/tls.ts#L24">util/tls.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/util/tls.ts#L24">util/tls.ts:24</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -179,7 +188,7 @@
 					<div class="tsd-signature tsd-kind-icon">Https<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/util/tls.ts#L12">util/tls.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/util/tls.ts#L12">util/tls.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -200,7 +209,7 @@
 					<div class="tsd-signature tsd-kind-icon">Https<wbr>Path<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/util/tls.ts#L17">util/tls.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/util/tls.ts#L17">util/tls.ts:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -221,7 +230,7 @@
 					<div class="tsd-signature tsd-kind-icon">PEM<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/util/tls.ts#L22">util/tls.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/util/tls.ts#L22">util/tls.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -234,7 +243,7 @@
 					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>STANDALONE_<wbr>PORT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">45456</span><span class="tsd-signature-symbol"> =&nbsp;45456</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/types.ts#L8">types.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/types.ts#L8">types.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -244,7 +253,17 @@
 					<div class="tsd-signature tsd-kind-icon">REQUEST_<wbr>RECEIVED_<wbr>TOPIC<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"request-received"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;request-received&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/standalone/standalone-model.ts#L26">standalone/standalone-model.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/standalone/standalone-model.ts#L26">standalone/standalone-model.ts:26</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="response_completed_topic" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> RESPONSE_<wbr>COMPLETED_<wbr>TOPIC</h3>
+					<div class="tsd-signature tsd-kind-icon">RESPONSE_<wbr>COMPLETED_<wbr>TOPIC<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"response-completed"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;response-completed&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/standalone/standalone-model.ts#L27">standalone/standalone-model.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -261,7 +280,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/standalone/standalone-model.ts#L28">standalone/standalone-model.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/standalone/standalone-model.ts#L29">standalone/standalone-model.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -290,7 +309,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/standalone/standalone-model.ts#L54">standalone/standalone-model.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/standalone/standalone-model.ts#L55">standalone/standalone-model.ts:55</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -313,7 +332,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/standalone/standalone-model.ts#L121">standalone/standalone-model.ts:121</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/standalone/standalone-model.ts#L122">standalone/standalone-model.ts:122</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -339,7 +358,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/util/destroyable-server.ts#L13">util/destroyable-server.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/util/destroyable-server.ts#L13">util/destroyable-server.ts:13</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -362,7 +381,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/util/promise.ts#L5">util/promise.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/util/promise.ts#L5">util/promise.ts:5</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -422,7 +441,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/util/tls.ts#L30">util/tls.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/util/tls.ts#L30">util/tls.ts:30</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -445,7 +464,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/util/normalize-url.ts#L7">util/normalize-url.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/util/normalize-url.ts#L7">util/normalize-url.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -468,7 +487,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/standalone/standalone-model.ts#L35">standalone/standalone-model.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/standalone/standalone-model.ts#L36">standalone/standalone-model.ts:36</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -491,7 +510,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/server/parse-body.ts#L10">server/parse-body.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/server/request-utils.ts#L56">server/request-utils.ts:56</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -510,6 +529,29 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="parsebodystream" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> parse<wbr>Body<wbr>Stream</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>Body<wbr>Stream<span class="tsd-signature-symbol">(</span>bodyStream<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">stream.Readable</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/internal.parsedbody.html" class="tsd-signature-type">ParsedBody</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/server/request-utils.ts#L21">server/request-utils.ts:21</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bodyStream: <span class="tsd-signature-type">stream.Readable</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/internal.parsedbody.html" class="tsd-signature-type">ParsedBody</a></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="readfile" class="tsd-anchor"></a>
 					<h3>read<wbr>File</h3>
@@ -521,7 +563,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/util/fs.ts#L7">util/fs.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/util/fs.ts#L7">util/fs.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -538,7 +580,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/util/fs.ts#L8">util/fs.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/util/fs.ts#L8">util/fs.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -554,17 +596,86 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="waitforcompletedrequest" class="tsd-anchor"></a>
-					<h3>wait<wbr>For<wbr>Completed<wbr>Request</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">wait<wbr>For<wbr>Completed<wbr>Request<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/internal.ongoingrequest.html" class="tsd-signature-type">OngoingRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="streamtobuffer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> stream<wbr>ToBuffer</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">stream<wbr>ToBuffer<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">stream.Readable</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/util/request-utils.ts#L8">util/request-utils.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/server/request-utils.ts#L12">server/request-utils.ts:12</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>input: <span class="tsd-signature-type">stream.Readable</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="trackresponse" class="tsd-anchor"></a>
+					<h3>track<wbr>Response</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">track<wbr>Response<span class="tsd-signature-symbol">(</span>response<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">express.Response</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/internal.ongoingresponse.html" class="tsd-signature-type">OngoingResponse</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/server/request-utils.ts#L84">server/request-utils.ts:84</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>response: <span class="tsd-signature-type">express.Response</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/internal.ongoingresponse.html" class="tsd-signature-type">OngoingResponse</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="waitforbody" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> wait<wbr>For<wbr>Body</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">wait<wbr>For<wbr>Body<span class="tsd-signature-symbol">(</span>body<span class="tsd-signature-symbol">: </span><a href="../interfaces/internal.parsedbody.html" class="tsd-signature-type">ParsedBody</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/server/request-utils.ts#L47">server/request-utils.ts:47</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>body: <a href="../interfaces/internal.parsedbody.html" class="tsd-signature-type">ParsedBody</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="waitforcompletedrequest" class="tsd-anchor"></a>
+					<h3>wait<wbr>For<wbr>Completed<wbr>Request</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">wait<wbr>For<wbr>Completed<wbr>Request<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/internal.ongoingrequest.html" class="tsd-signature-type">OngoingRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/internal.completedrequest.html" class="tsd-signature-type">CompletedRequest</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/server/request-utils.ts#L71">server/request-utils.ts:71</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -573,7 +684,30 @@
 									<h5>request: <a href="../interfaces/internal.ongoingrequest.html" class="tsd-signature-type">OngoingRequest</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/internal.completedrequest.html" class="tsd-signature-type">CompletedRequest</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="waitforcompletedresponse" class="tsd-anchor"></a>
+					<h3>wait<wbr>For<wbr>Completed<wbr>Response</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">wait<wbr>For<wbr>Completed<wbr>Response<span class="tsd-signature-symbol">(</span>response<span class="tsd-signature-symbol">: </span><a href="../interfaces/internal.ongoingresponse.html" class="tsd-signature-type">OngoingResponse</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/internal.completedresponse.html" class="tsd-signature-type">CompletedResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/server/request-utils.ts#L123">server/request-utils.ts:123</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>response: <a href="../interfaces/internal.ongoingresponse.html" class="tsd-signature-type">OngoingResponse</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/internal.completedresponse.html" class="tsd-signature-type">CompletedResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -586,7 +720,7 @@
 					<div class="tsd-signature tsd-kind-icon">Scalar<wbr>Resolvers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/standalone/standalone-model.ts#L61">standalone/standalone-model.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/standalone/standalone-model.ts#L62">standalone/standalone-model.ts:62</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
@@ -595,7 +729,7 @@
 						<div class="tsd-signature tsd-kind-icon">Any<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">GraphQLScalarType</span><span class="tsd-signature-symbol"> =&nbsp;new GraphQLScalarType({name: &#x27;Any&#x27;,description: &#x27;Wildcard Anything! Here be dragons&#x27;,serialize: (value: any) &#x3D;&gt; JSON.stringify(value),parseValue: (input: string): any &#x3D;&gt; JSON.parse(input),parseLiteral: parseAnyAst})</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/standalone/standalone-model.ts#L112">standalone/standalone-model.ts:112</a></li>
+								<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/standalone/standalone-model.ts#L113">standalone/standalone-model.ts:113</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -605,7 +739,7 @@
 						<div class="tsd-signature tsd-kind-icon">Json<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">GraphQLScalarType</span><span class="tsd-signature-symbol"> =&nbsp;new GraphQLScalarType({name: &#x27;Json&#x27;,description: &#x27;A JSON entity, serialized as a simple JSON string&#x27;,serialize: (value: any) &#x3D;&gt; JSON.stringify(value),parseValue: (input: string): any &#x3D;&gt; JSON.parse(input),parseLiteral: parseAnyAst})</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/standalone/standalone-model.ts#L104">standalone/standalone-model.ts:104</a></li>
+								<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/standalone/standalone-model.ts#L105">standalone/standalone-model.ts:105</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -615,7 +749,7 @@
 						<div class="tsd-signature tsd-kind-icon">Request<wbr>Handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">GraphQLScalarType</span><span class="tsd-signature-symbol"> =&nbsp;new GraphQLScalarType({name: &#x27;RequestHandler&#x27;,description: &#x27;Handler for requests&#x27;,serialize: (value) &#x3D;&gt; {throw new Error(&#x27;Handlers are input only values&#x27;)},parseValue: (v) &#x3D;&gt; v,parseLiteral(ast) {if (ast.kind &#x3D;&#x3D;&#x3D; Kind.OBJECT) {return astToObject&lt;HandlerData&gt;(ast);} else return null;}})</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/standalone/standalone-model.ts#L76">standalone/standalone-model.ts:76</a></li>
+								<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/standalone/standalone-model.ts#L77">standalone/standalone-model.ts:77</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -625,7 +759,7 @@
 						<div class="tsd-signature tsd-kind-icon">Request<wbr>Matcher<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">GraphQLScalarType</span><span class="tsd-signature-symbol"> =&nbsp;new GraphQLScalarType({name: &#x27;RequestMatcher&#x27;,description: &#x27;Matcher for requests&#x27;,serialize: (value) &#x3D;&gt; {throw new Error(&#x27;Matchers are input only values&#x27;)},parseValue: (v) &#x3D;&gt; v,parseLiteral(ast) {if (ast.kind &#x3D;&#x3D;&#x3D; Kind.OBJECT) {return astToObject&lt;MatcherData&gt;(ast);} else return null;}})</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/standalone/standalone-model.ts#L62">standalone/standalone-model.ts:62</a></li>
+								<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/standalone/standalone-model.ts#L63">standalone/standalone-model.ts:63</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -635,7 +769,7 @@
 						<div class="tsd-signature tsd-kind-icon">Rule<wbr>Completion<wbr>Checker<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">GraphQLScalarType</span><span class="tsd-signature-symbol"> =&nbsp;new GraphQLScalarType({name: &#x27;RuleCompletionChecker&#x27;,description: &#x27;Completion checkers for requests&#x27;,serialize: (value) &#x3D;&gt; {throw new Error(&#x27;Completion checkers are input only values&#x27;)},parseValue: (v) &#x3D;&gt; v,parseLiteral(ast) {if (ast.kind &#x3D;&#x3D;&#x3D; Kind.OBJECT) {return astToObject&lt;CompletionCheckerData&gt;(ast);} else return null;}})</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/standalone/standalone-model.ts#L90">standalone/standalone-model.ts:90</a></li>
+								<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/standalone/standalone-model.ts#L91">standalone/standalone-model.ts:91</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -677,7 +811,13 @@
 						<a href="../classes/internal.mockedendpointclient.html" class="tsd-kind-icon">Mocked<wbr>Endpoint<wbr>Client</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/internal.completedbody.html" class="tsd-kind-icon">Completed<wbr>Body</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/internal.completedrequest.html" class="tsd-kind-icon">Completed<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/internal.completedresponse.html" class="tsd-kind-icon">Completed<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/internal.destroyableserver.html" class="tsd-kind-icon">Destroyable<wbr>Server</a>
@@ -695,13 +835,16 @@
 						<a href="../interfaces/internal.ongoingrequest.html" class="tsd-kind-icon">Ongoing<wbr>Request</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/internal.ongoingresponse.html" class="tsd-kind-icon">Ongoing<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/internal.parsedbody.html" class="tsd-kind-icon">Parsed<wbr>Body</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/internal.proxyconfig.html" class="tsd-kind-icon">Proxy<wbr>Config</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/internal.request.html" class="tsd-kind-icon">Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/internal.response.html" class="tsd-kind-icon">Response</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="internal.html#caoptions" class="tsd-kind-icon">CAOptions</a>
@@ -723,6 +866,9 @@
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="internal.html#request_received_topic" class="tsd-kind-icon">REQUEST_<wbr>RECEIVED_<wbr>TOPIC</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="internal.html#response_completed_topic" class="tsd-kind-icon">RESPONSE_<wbr>COMPLETED_<wbr>TOPIC</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="internal.html#asttoobject" class="tsd-kind-icon">ast<wbr>ToObject</a>
@@ -751,11 +897,26 @@
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="internal.html#parsebody" class="tsd-kind-icon">parse<wbr>Body</a>
 					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="internal.html#parsebodystream" class="tsd-kind-icon">parse<wbr>Body<wbr>Stream</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="internal.html#readfile" class="tsd-kind-icon">read<wbr>File</a>
 					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="internal.html#streamtobuffer" class="tsd-kind-icon">stream<wbr>ToBuffer</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="internal.html#trackresponse" class="tsd-kind-icon">track<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="internal.html#waitforbody" class="tsd-kind-icon">wait<wbr>For<wbr>Body</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="internal.html#waitforcompletedrequest" class="tsd-kind-icon">wait<wbr>For<wbr>Completed<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="internal.html#waitforcompletedresponse" class="tsd-kind-icon">wait<wbr>For<wbr>Completed<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="internal.html#scalarresolvers" class="tsd-kind-icon">Scalar<wbr>Resolvers</a>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CompletedRequest | mockttp</title>
+	<title>CompletedBody | mockttp</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/internal.html">Internal</a>
 				</li>
 				<li>
-					<a href="internal.completedrequest.html">CompletedRequest</a>
+					<a href="internal.completedbody.html">CompletedBody</a>
 				</li>
 			</ul>
-			<h1>Interface CompletedRequest</h1>
+			<h1>Interface CompletedBody</h1>
 		</div>
 	</div>
 </header>
@@ -71,12 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="internal.request.html" class="tsd-signature-type">Request</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">CompletedRequest</span>
-							</li>
-						</ul>
+						<span class="target">CompletedBody</span>
 					</li>
 				</ul>
 			</section>
@@ -87,13 +82,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="internal.completedrequest.html#body" class="tsd-kind-icon">body</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="internal.completedrequest.html#headers" class="tsd-kind-icon">headers</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="internal.completedrequest.html#hostname" class="tsd-kind-icon">hostname</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="internal.completedrequest.html#method" class="tsd-kind-icon">method</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="internal.completedrequest.html#path" class="tsd-kind-icon">path</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="internal.completedrequest.html#protocol" class="tsd-kind-icon">protocol</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="internal.completedrequest.html#url" class="tsd-kind-icon">url</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="internal.completedbody.html#buffer" class="tsd-kind-icon">buffer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="internal.completedbody.html#formdata" class="tsd-kind-icon">form<wbr>Data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="internal.completedbody.html#json" class="tsd-kind-icon">json</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="internal.completedbody.html#text" class="tsd-kind-icon">text</a></li>
 							</ul>
 						</section>
 					</div>
@@ -102,86 +94,42 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="body" class="tsd-anchor"></a>
-					<h3>body</h3>
-					<div class="tsd-signature tsd-kind-icon">body<span class="tsd-signature-symbol">:</span> <a href="internal.completedbody.html" class="tsd-signature-type">CompletedBody</a></div>
+					<a name="buffer" class="tsd-anchor"></a>
+					<h3>buffer</h3>
+					<div class="tsd-signature tsd-kind-icon">buffer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/types.ts#L53">types.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/types.ts#L46">types.ts:46</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="headers" class="tsd-anchor"></a>
-					<h3>headers</h3>
-					<div class="tsd-signature tsd-kind-icon">headers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="formdata" class="tsd-anchor"></a>
+					<h3>form<wbr>Data</h3>
+					<div class="tsd-signature tsd-kind-icon">form<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="internal.request.html">Request</a>.<a href="internal.request.html#headers">headers</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/types.ts#L27">types.ts:27</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">string</span></h5>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="hostname" class="tsd-anchor"></a>
-					<h3>hostname</h3>
-					<div class="tsd-signature tsd-kind-icon">hostname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="internal.request.html">Request</a>.<a href="internal.request.html#hostname">hostname</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/types.ts#L25">types.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/types.ts#L49">types.ts:49</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="method" class="tsd-anchor"></a>
-					<h3>method</h3>
-					<div class="tsd-signature tsd-kind-icon">method<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="json" class="tsd-anchor"></a>
+					<h3>json</h3>
+					<div class="tsd-signature tsd-kind-icon">json<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="internal.request.html">Request</a>.<a href="internal.request.html#method">method</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/types.ts#L22">types.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/types.ts#L48">types.ts:48</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="path" class="tsd-anchor"></a>
-					<h3>path</h3>
-					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="text" class="tsd-anchor"></a>
+					<h3>text</h3>
+					<div class="tsd-signature tsd-kind-icon">text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="internal.request.html">Request</a>.<a href="internal.request.html#path">path</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/types.ts#L24">types.ts:24</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="protocol" class="tsd-anchor"></a>
-					<h3>protocol</h3>
-					<div class="tsd-signature tsd-kind-icon">protocol<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="internal.request.html">Request</a>.<a href="internal.request.html#protocol">protocol</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/types.ts#L21">types.ts:21</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="url" class="tsd-anchor"></a>
-					<h3>url</h3>
-					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="internal.request.html">Request</a>.<a href="internal.request.html#url">url</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/types.ts#L23">types.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/types.ts#L47">types.ts:47</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -221,39 +169,30 @@
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="../classes/internal.mockedendpointclient.html" class="tsd-kind-icon">Mocked<wbr>Endpoint<wbr>Client</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="internal.completedbody.html" class="tsd-kind-icon">Completed<wbr>Body</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="internal.completedrequest.html" class="tsd-kind-icon">Completed<wbr>Request</a>
+						<a href="internal.completedbody.html" class="tsd-kind-icon">Completed<wbr>Body</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="internal.completedrequest.html#body" class="tsd-kind-icon">body</a>
+								<a href="internal.completedbody.html#buffer" class="tsd-kind-icon">buffer</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="internal.completedrequest.html#headers" class="tsd-kind-icon">headers</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="internal.completedbody.html#formdata" class="tsd-kind-icon">form<wbr>Data</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="internal.completedrequest.html#hostname" class="tsd-kind-icon">hostname</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="internal.completedbody.html#json" class="tsd-kind-icon">json</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="internal.completedrequest.html#method" class="tsd-kind-icon">method</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="internal.completedrequest.html#path" class="tsd-kind-icon">path</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="internal.completedrequest.html#protocol" class="tsd-kind-icon">protocol</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="internal.completedrequest.html#url" class="tsd-kind-icon">url</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="internal.completedbody.html#text" class="tsd-kind-icon">text</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="internal.completedrequest.html" class="tsd-kind-icon">Completed<wbr>Request</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="internal.completedresponse.html" class="tsd-kind-icon">Completed<wbr>Response</a>
 					</li>

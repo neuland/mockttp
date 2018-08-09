@@ -401,7 +401,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/7d72afa/src/util/destroyable-server.ts#L9">util/destroyable-server.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/pimterry/mockttp/blob/0743d6b/src/util/destroyable-server.ts#L9">util/destroyable-server.ts:9</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1690,7 +1690,13 @@
 						<a href="../classes/internal.mockedendpointclient.html" class="tsd-kind-icon">Mocked<wbr>Endpoint<wbr>Client</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="internal.completedbody.html" class="tsd-kind-icon">Completed<wbr>Body</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="internal.completedrequest.html" class="tsd-kind-icon">Completed<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="internal.completedresponse.html" class="tsd-kind-icon">Completed<wbr>Response</a>
 					</li>
 				</ul>
 				<ul class="current">
@@ -1786,13 +1792,16 @@
 						<a href="internal.ongoingrequest.html" class="tsd-kind-icon">Ongoing<wbr>Request</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="internal.ongoingresponse.html" class="tsd-kind-icon">Ongoing<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="internal.parsedbody.html" class="tsd-kind-icon">Parsed<wbr>Body</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="internal.proxyconfig.html" class="tsd-kind-icon">Proxy<wbr>Config</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="internal.request.html" class="tsd-kind-icon">Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="internal.response.html" class="tsd-kind-icon">Response</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/internal.html#caoptions" class="tsd-kind-icon">CAOptions</a>
@@ -1814,6 +1823,9 @@
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/internal.html#request_received_topic" class="tsd-kind-icon">REQUEST_<wbr>RECEIVED_<wbr>TOPIC</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/internal.html#response_completed_topic" class="tsd-kind-icon">RESPONSE_<wbr>COMPLETED_<wbr>TOPIC</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../modules/internal.html#asttoobject" class="tsd-kind-icon">ast<wbr>ToObject</a>
@@ -1842,11 +1854,26 @@
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/internal.html#parsebody" class="tsd-kind-icon">parse<wbr>Body</a>
 					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/internal.html#parsebodystream" class="tsd-kind-icon">parse<wbr>Body<wbr>Stream</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/internal.html#readfile" class="tsd-kind-icon">read<wbr>File</a>
 					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/internal.html#streamtobuffer" class="tsd-kind-icon">stream<wbr>ToBuffer</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/internal.html#trackresponse" class="tsd-kind-icon">track<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/internal.html#waitforbody" class="tsd-kind-icon">wait<wbr>For<wbr>Body</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/internal.html#waitforcompletedrequest" class="tsd-kind-icon">wait<wbr>For<wbr>Completed<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/internal.html#waitforcompletedresponse" class="tsd-kind-icon">wait<wbr>For<wbr>Completed<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/internal.html#scalarresolvers" class="tsd-kind-icon">Scalar<wbr>Resolvers</a>
