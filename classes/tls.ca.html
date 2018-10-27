@@ -54,10 +54,10 @@
 					<a href="../index.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/internal.html">Internal</a>
+					<a href="../modules/tls.html">TLS</a>
 				</li>
 				<li>
-					<a href="internal.ca.html">CA</a>
+					<a href="tls.ca.html">CA</a>
 				</li>
 			</ul>
 			<h1>Class CA</h1>
@@ -82,22 +82,21 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="internal.ca.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="tls.ca.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="internal.ca.html#cacert" class="tsd-kind-icon">ca<wbr>Cert</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="internal.ca.html#cakey" class="tsd-kind-icon">ca<wbr>Key</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="internal.ca.html#certcache" class="tsd-kind-icon">cert<wbr>Cache</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="internal.ca.html#keys" class="tsd-kind-icon">KEYS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="tls.ca.html#cacert" class="tsd-kind-icon">ca<wbr>Cert</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="tls.ca.html#cakey" class="tsd-kind-icon">ca<wbr>Key</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="tls.ca.html#certcache" class="tsd-kind-icon">cert<wbr>Cache</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="internal.ca.html#generatecertificate" class="tsd-kind-icon">generate<wbr>Certificate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="tls.ca.html#generatecertificate" class="tsd-kind-icon">generate<wbr>Certificate</a></li>
 							</ul>
 						</section>
 					</div>
@@ -109,25 +108,28 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new CA<span class="tsd-signature-symbol">(</span>caKey<span class="tsd-signature-symbol">: </span><a href="../modules/internal.html#pem" class="tsd-signature-type">PEM</a>, caCert<span class="tsd-signature-symbol">: </span><a href="../modules/internal.html#pem" class="tsd-signature-type">PEM</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="internal.ca.html" class="tsd-signature-type">CA</a></li>
+						<li class="tsd-signature tsd-kind-icon">new CA<span class="tsd-signature-symbol">(</span>caKey<span class="tsd-signature-symbol">: </span><a href="../modules/tls.html#pem" class="tsd-signature-type">PEM</a>, caCert<span class="tsd-signature-symbol">: </span><a href="../modules/tls.html#pem" class="tsd-signature-type">PEM</a>, keyLength<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="tls.ca.html" class="tsd-signature-type">CA</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6ac5461/src/util/tls.ts#L60">util/tls.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/21fb31a/src/util/tls.ts#L119">util/tls.ts:119</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>caKey: <a href="../modules/internal.html#pem" class="tsd-signature-type">PEM</a></h5>
+									<h5>caKey: <a href="../modules/tls.html#pem" class="tsd-signature-type">PEM</a></h5>
 								</li>
 								<li>
-									<h5>caCert: <a href="../modules/internal.html#pem" class="tsd-signature-type">PEM</a></h5>
+									<h5>caCert: <a href="../modules/tls.html#pem" class="tsd-signature-type">PEM</a></h5>
+								</li>
+								<li>
+									<h5>keyLength: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="internal.ca.html" class="tsd-signature-type">CA</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="tls.ca.html" class="tsd-signature-type">CA</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -140,7 +142,7 @@
 					<div class="tsd-signature tsd-kind-icon">ca<wbr>Cert<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6ac5461/src/util/tls.ts#L57">util/tls.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/21fb31a/src/util/tls.ts#L116">util/tls.ts:116</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -158,7 +160,7 @@
 					<div class="tsd-signature tsd-kind-icon">ca<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">__type</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6ac5461/src/util/tls.ts#L58">util/tls.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/21fb31a/src/util/tls.ts#L117">util/tls.ts:117</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -168,27 +170,17 @@
 					<div class="tsd-signature tsd-kind-icon">cert<wbr>Cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6ac5461/src/util/tls.ts#L60">util/tls.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/21fb31a/src/util/tls.ts#L119">util/tls.ts:119</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>domain: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="../modules/internal.html#generatedcertificate" class="tsd-signature-type">GeneratedCertificate</a></h5>
+								<h5><span class="tsd-signature-symbol">[</span>domain: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="../modules/tls.html#generatedcertificate" class="tsd-signature-type">GeneratedCertificate</a></h5>
 							</li>
 						</ul>
 					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
-					<a name="keys" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> KEYS</h3>
-					<div class="tsd-signature tsd-kind-icon">KEYS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;pki.rsa.generateKeyPair(1024)</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6ac5461/src/util/tls.ts#L55">util/tls.ts:55</a></li>
-						</ul>
-					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -197,13 +189,13 @@
 					<a name="generatecertificate" class="tsd-anchor"></a>
 					<h3>generate<wbr>Certificate</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">generate<wbr>Certificate<span class="tsd-signature-symbol">(</span>domain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/internal.html#generatedcertificate" class="tsd-signature-type">GeneratedCertificate</a></li>
+						<li class="tsd-signature tsd-kind-icon">generate<wbr>Certificate<span class="tsd-signature-symbol">(</span>domain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/tls.html#generatedcertificate" class="tsd-signature-type">GeneratedCertificate</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6ac5461/src/util/tls.ts#L71">util/tls.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/21fb31a/src/util/tls.ts#L137">util/tls.ts:137</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -212,7 +204,7 @@
 									<h5>domain: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/internal.html#generatedcertificate" class="tsd-signature-type">GeneratedCertificate</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/tls.html#generatedcertificate" class="tsd-signature-type">GeneratedCertificate</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -227,7 +219,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_util_serialization_.html">"util/serialization"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/internal.html">Internal</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -239,6 +231,9 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/mockttp.html">Mockttp</a>
 					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/tls.html">TLS</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
@@ -246,30 +241,69 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="internal.ca.html" class="tsd-kind-icon">CA</a>
+						<a href="tls.ca.html" class="tsd-kind-icon">CA</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="internal.ca.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="tls.ca.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="internal.ca.html#cacert" class="tsd-kind-icon">ca<wbr>Cert</a>
+								<a href="tls.ca.html#cacert" class="tsd-kind-icon">ca<wbr>Cert</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="internal.ca.html#cakey" class="tsd-kind-icon">ca<wbr>Key</a>
+								<a href="tls.ca.html#cakey" class="tsd-kind-icon">ca<wbr>Key</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="internal.ca.html#certcache" class="tsd-kind-icon">cert<wbr>Cache</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
-								<a href="internal.ca.html#keys" class="tsd-kind-icon">KEYS</a>
+								<a href="tls.ca.html#certcache" class="tsd-kind-icon">cert<wbr>Cache</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="internal.ca.html#generatecertificate" class="tsd-kind-icon">generate<wbr>Certificate</a>
+								<a href="tls.ca.html#generatecertificate" class="tsd-kind-icon">generate<wbr>Certificate</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/tls.html#caoptions" class="tsd-kind-icon">CAOptions</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/tls.html#generatedcertificate" class="tsd-kind-icon">Generated<wbr>Certificate</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/tls.html#httpsoptions" class="tsd-kind-icon">Https<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/tls.html#httpspathoptions" class="tsd-kind-icon">Https<wbr>Path<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/tls.html#pem" class="tsd-kind-icon">PEM</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/tls.html#key_pair" class="tsd-kind-icon">KEY_<wbr>PAIR</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/tls.html#asn1" class="tsd-kind-icon">asn1</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/tls.html#encode64" class="tsd-kind-icon">encode64</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/tls.html#md" class="tsd-kind-icon">md</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/tls.html#pki" class="tsd-kind-icon">pki</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/tls.html#util" class="tsd-kind-icon">util</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/tls.html#generatecacertificate" class="tsd-kind-icon">generateCACertificate</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/tls.html#generatespkifingerprint" class="tsd-kind-icon">generateSPKIFingerprint</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/tls.html#getca" class="tsd-kind-icon">getCA</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
